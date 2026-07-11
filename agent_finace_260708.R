@@ -343,20 +343,119 @@ user_data_chunk <- paste0(
 
 
 # ------------------------------------------------------------------------------
-# 4단계: Jules 분석용 실시간 데이터 스냅샷 저장 및 종료 (API 호출 없음)
+# [사전 셋업] 동일 조건 독립 호출을 위한 전용 헬퍼 함수 정의 (수정본)
 # ------------------------------------------------------------------------------
-cat("=== 💾 4단계: Jules 가상 VM이 읽을 최신 실시간 데이터 스냅샷 저장 ===\n")
+call_gemini_agent <- function(prompt_text, temperature_val) {
+  
+  # 🎯 1. 프롬프트가 매우 커서 토큰 한도(TPM)에 걸리므로 대기 시간을 45초로 대폭 늘립니다.
+  cat("   ⏳ API 트래픽 한도(RPM/TPM) 리셋을 위해 45초 대기... \n")
+  Sys.sleep(45)
+  
+  payload <- list(
+    contents = list(list(parts = list(list(text = prompt_text)))),
+    generationConfig = list(temperature = temperature_val)
+  )
+  url <- sprintf("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent", MODEL_ANALYZE)
+  
+  # 🎯 2. 조용히 무한 프리징되는 현상을 막고, 에러 시 화면에 직관적으로 알리도록 구조 변경
+  res <- tryCatch({
+    request(url) %>%
+      req_url_query(key = API_KEY) %>%
+      req_method("POST") %>%
+      req_headers("Content-Type" = "application/json") %>%
+      req_body_json(payload) %>%
+      # 조용히 혼자서 5분 넘게 대기하는 것을 막기 위해 최대 3회로 단축
+      req_retry(max_tries = 3, backoff = function(re) 30) %>% 
+      req_perform()
+  }, error = function(e) {
+    cat("\n❌ 구글 API 서버 연결 실패 (할당량 초과 또는 모델명 오류):\n")
+    print(e)
+    stop("진행을 멈추고 API 무료 할당량 상태를 확인하세요.")
+  })
+  
+  return(resp_body_json(res)$candidates[[1]]$content$parts[[1]]$text)
+}
 
-# Jules에게 넘겨줄 텍스트 데이터 묶기
-realtime_payload <- paste0(
-  "## [실시간 금융 데이터 현황]\n\n",
-  "### 1) 보유 종목 현황 (OCR)\n", asset_text, "\n\n",
-  "### 2) 지표 현황 (크롤링)\n", indicator_text, "\n\n",
-  "### 3) 계좌 제약 및 매크로 변수\n", meta_data_text
+
+# ------------------------------------------------------------------------------
+# 4단계: [독립 병렬 실행] Chat 1과 Chat 2에게 통합 프롬프트 1회씩 지시 (비용 50% 절감)
+# ------------------------------------------------------------------------------  
+cat("=== 🧠 4단계: 동일 조건 하에 Chat 1과 Chat 2의 독립적 전체 진단(단계 1~7) 시작 ===\n")
+
+# 통합 프롬프트와 유저 데이터를 결합
+prompt_twin_integrated <- paste0(prompt_integrated, user_data_chunk)
+
+cat("   👉 Chat 1 탭 분석 중 (통합 파이프라인)...\n")
+report_chat1 <- call_gemini_agent(prompt_twin_integrated, temperature_val = 0.55)
+
+cat("   👉 Chat 2 탭 분석 중 (통합 파이프라인)...\n")
+report_chat2 <- call_gemini_agent(prompt_twin_integrated, temperature_val = 0.55)
+
+cat("   ✔ 두 개 채팅창의 독립적 전체 진단 완료!\n\n")
+
+
+# ------------------------------------------------------------------------------
+# 5단계: [판사 레이어] Chat 1과 Chat 2의 전체 보고서 상호 교차 검증 및 최종 합의
+# ------------------------------------------------------------------------------
+cat("=== ⚖️ 5단계: [크로스 체크] Judge Chat 가동, 두 전체 결과물 비교 후 최종안 합의 ===\n")
+
+prompt_judge_system <- r"(
+[System: 너는 독립된 두 개의 투자 에이전트(Chat 1, Chat 2)의 결론을 교차 검증하는 최고투자책임자(CIO)이자 금융 판사(Judge Chat)다.]
+제공된 [Chat 1의 전체 보고서]와 [Chat 2의 전체 보고서]를 꼼꼼히 대조하라.
+
+1. 두 에이전트가 도출한 [단계 5] Execution Matrix 표를 대조하여, 수량과 타점이 일치하면 그대로 승인하고, 괴리가 있다면 V3 룰북 예외 규칙에 가장 부합하는 안전한 방향으로 싱크(Sync)를 맞춰라.
+2. [단계 6] 잔여 자산 보고서와 [단계 7] 알파 스트레스 테스트(Top 3) 역시 두 에이전트의 의견을 종합하여 가장 타당성 높은 결론 하나로 병합하라.
+3. 최종 결과물은 다음의 구조를 완벽히 지켜서 출력하라:
+   - 📝 크로스 체크 판결문 (두 창의 차이점 및 매트릭스 조정 사유 요약)
+   - 📊 최종 통합 Execution Matrix (표 형식)
+   - 📋 최종 잔여 자산 보고서
+   - 🏆 최종 알파 스트레스 테스트 (Top 3 종목 및 구조적 논거)
+)"
+
+prompt_final_judge <- paste0(prompt_judge_system, 
+                             "\n\n===================================\n[Chat 1 창의 전체 분석 결과]\n", report_chat1, 
+                             "\n\n===================================\n[Chat 2 창의 전체 분석 결과]\n", report_chat2)
+
+report_final_integrated <- call_gemini_agent(prompt_final_judge, temperature_val = 0.5)
+cat("   ✔ 판사(Judge)의 상호 의견 조율 및 최종 통합 레포트 발행 완료!\n\n")
+
+
+# ------------------------------------------------------------------------------
+# 6단계: 보고서 결합 및 마크다운 백업 / 가독성 극대화 HTML 웹페이지 변환 저장
+# ------------------------------------------------------------------------------
+library(rmarkdown)
+cat("=== 💾 6단계: 최종 통합 조언서 병합 및 디자인 HTML 웹페이지 렌더링 ===\n")
+
+complete_final_report <- paste0(
+  "# 📈 실시간 자산 배분 조언서 (비정기 Irregular Report / 동일 조건 쌍둥이 크로스 체크 적용)\n\n",
+  "> **⚠️ 생성 안내:** 본 보고서는 정규 스케줄(08:00, 13:00, 15:45, 18:30) 외의 시간에 생성된 비정기 산출물입니다.\n",
+  "> **🤖 시스템:** 단일 통합 프롬프트 파이프라인으로 구동된 Chat 1과 Chat 2의 판단 오차를 Judge Chat이 최종 조율한 결과물입니다.\n\n",
+  "---\n\n",
+  "## PART I: 개별 독립 에이전트 분석 원문 (단계 1 ~ 단계 7)\n",
+  "### 📂 Chat 1 실행창 결과\n", report_chat1, "\n\n",
+  "### 📂 Chat 2 실행창 결과\n", report_chat2, "\n\n",
+  "---\n\n",
+  "## PART II: ⚖️ Judge Chat 최종 통합 합의문 (판결/매트릭스/잔여자산/알파Top3)\n",
+  report_final_integrated
 )
 
-# 텍스트 파일로 내보내기 (이 파일을 Jules가 읽고 분석합니다)
-output_file <- file.path(BASE_DIR, "realtime_snapshot.txt")
-writeLines(realtime_payload, output_file, useBytes = TRUE)
+# 마크다운 백업본 저장
+output_md_path <- file.path(BASE_DIR, "Final_Execution_Report_Debate.md")
+writeLines(complete_final_report, output_md_path, useBytes = TRUE)
 
-cat(sprintf("✔ '%s' 저장 완료. 외부 API 호출을 막기 위해 스크립트를 여기서 종료합니다.\n", output_file))
+# 가독성을 극대화한 HTML 웹페이지 문서 렌더링
+output_html_path <- file.path(BASE_DIR, "Final_Execution_Report_Debate.html")
+render(input = output_md_path,
+       output_format = html_document(
+         theme = "flatly",        # 고급스러운 모던 웹 스타일 테마
+         highlight = "tango",     # 코드/텍스트 가독성 최적화
+         toc = TRUE,              # 좌측 사이드바 목차 활성화
+         toc_float = TRUE         # 스크롤 최적화 유동 목차
+       ),
+       output_file = output_html_path,
+       quiet = TRUE)
+
+cat("\n========================================================\n")
+cat("🎉 [비정기 레포트 - 통합 3-Step 파이프라인 및 HTML 시각화 완결] \n")
+cat(sprintf("🌐 HTML 웹페이지 주소: %s\n", output_html_path))
+cat("========================================================\n")

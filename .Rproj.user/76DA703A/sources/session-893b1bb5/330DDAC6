@@ -1,6 +1,6 @@
 {
     "id": "330DDAC6",
-    "path": "D:/Not_Pretence/agent_finace_260708.R",
+    "path": "D:/Not_Pretence/agent_finace_260709.R",
     "project_path": null,
     "type": "r_source",
     "hash": "0",
@@ -11,14 +11,16 @@
     "relative_order": 3,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "281,60",
+        "scrollLine": "265"
     },
     "folds": "",
-    "lastKnownWriteTime": 1783525638,
+    "lastKnownWriteTime": 1783731333,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1783525638,
+    "last_content_update": 1783731333998,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,164 +1,15 @@
-# ==============================================================================
-# [V4] RStudio + Gemini API 통합 투자 에이전트 (3.1 Lite & 3.5 Extended 최종본)
-# ==============================================================================
-library(httr2)
-library(jsonlite)
-library(base64enc)
+# 🤖 Jules Investment Agent Master Rulebook (V3.1)
 
-start_time_finance <- Sys.time()
+## 📌 [System Persona: 다중 에이전트 시뮬레이션 및 판사 역할]
+너는 가상의 두 독립 에이전트 'Agent A(모멘텀 중심 공격적 트레이더)'와 'Agent B(리스크 관리 중심 보수적 가치 투자자)'의 포트폴리오 진단 결과를 내부적으로 시뮬레이션하고, 이를 최종 크로스 체크하여 결론을 내리는 최고투자책임자(CIO)이자 금융 판사(Judge Chat)다.
+프로젝트 폴더 내에 `realtime_snapshot.txt` 파일이 감지되면, 아래의 [투자 전략 V3.1]과 [7단계 파이프라인 프로토콜]을 100% 엄격하게 준수하여 분석을 수행하라.
 
-# ------------------------------------------------------------------------------
-# [환경 설정 및 모델 정의]
-# ------------------------------------------------------------------------------
-API_KEY       <- "AIzaSyADtw8j4PWTnZSneygq2ZiLao5ms-Yl6y8"
-BASE_DIR      <- "D:/대학원/portpolio"
-IMG_DIR       <- file.path(BASE_DIR, "portpolio_image")
-PATH_CSV      <- file.path(BASE_DIR, "all_pdfs", "financial_indicators_realtime.csv")
-PATH_R_SCRIPT <- "D:/Not_Pretence/pdf_finace_260617.R"
+---
 
+## 📊 [투자 전략 및 원칙 V3.1]
 
-# 🎯 구글 AI Studio 정식 API 식별자 주입
-MODEL_OCR     <- "gemini-3.1-flash-lite"  # 1단계: 6장 이미지 스캔 및 역산 담당
-MODEL_ANALYZE <- "gemini-3.5-flash"       # 4~7단계: 투자 전략 진단 및 판사 통합 합의 담당
-
-# MODEL_OCR     <- "gemini-3-flash-preview"  
-# MODEL_ANALYZE <- "gemini-3-flash-preview"  
-
-# 👇 실행 전 매번 업데이트해야 하는 사용자 메타 데이터
-USER_CASH_TOSS <- "3,000,000원 + $0($0 원화 환전 가능)"
-USER_LIMIT_ISA <- "올해 한도 마감됨."
-USER_LIMIT_PEN <- "올해 한도 마감됨. 계좌 현금 납입은 가능 세액은 내년 납입분으로 공제 가능"
-
-MACRO_FEAR_GREED <- 43
-MACRO_USD_KRW_NOW <- 1509.46
-MACRO_USD_KRW_AVG <- 1453.79
-
-# ------------------------------------------------------------------------------
-# 1단계: 6장 이미지 일괄 스캔 및 통합 자산 OCR 파싱 (계좌 태깅 레이어 추가)
-# ------------------------------------------------------------------------------
-cat(sprintf("=== 🚀 1단계: 6장 이미지 통합 OCR 파싱 시작 (%s) ===\n", MODEL_OCR))
-
-if(!dir.exists(IMG_DIR)) stop(sprintf("❌ 이미지 폴더가 존재하지 않습니다: %s", IMG_DIR))
-img_files <- list.files(IMG_DIR, pattern = "\\.(jpg|jpeg|png)$", full.names = TRUE)
-
-if(length(img_files) == 0) stop("❌ 폴더 내에 이미지 파일이 존재하지 않습니다.")
-cat(sprintf("   👉 총 %d개의 자산 스크린샷 감지 완료. 멀티-이미지 페이로드 생성 중...\n", length(img_files)))
-
-
-
-# 일관된 CSV 출력 강제
-
-parts_list <- list(
-  list(text = r"(
-[엄격한 시스템 연산 및 출력 지침]
-너는 금융 데이터 시각 분석 및 수학 연산 에이전트다. 제공된 이미지들을 분석하여 아래 규칙을 단 한 치의 오차도 없이 100% 준수하여 CSV 형태로 출력하라.
-
-1. 부연 설명, 인사말, 마크다운 기호 등을 절대 넣지 말고 오직 ```csv 코드 블록 하나만 출력하라.
-2. 행마다 열의 개수는 정확히 10개여야 하며, 빈 값이나 두 개 이상의 쉼표(,,) 또는 연속된 대시(-,-)로 인해 열이 밀리는 현상을 절대 금지한다.
-3. 이미지상에 당일 손익 관련 지표가 직접 적혀있지 않더라도, 아래 공식에 따라 반드시 수학적으로 계산하여 모든 빈칸을 채워라.
-
-[필수 수학적 역산 공식]
-- 현재 수익금 (당일 손익) = [당일 변동 가격(▲/▼ 원)] x [수량]. (예: ▲5원이고 809주이면 '+4,045원', ▼200원이고 414주이면 '-82,800원')
-- 현재 수익률 (당일) = 이미지에 표시된 당일 등락률(%)을 기입하되, 없을 경우 [당일 변동 가격 / (현재가 - 당일 변동 가격) x 100] 으로 소수점 둘째 자리까지 계산하여 기입.
-- 평균 단가 = 이미지에 표시된 '내 평균 XXX원'을 찾아 기입하되, 숫자가 흐릿하거나 없을 경우 [(평가금 - 평가 수익금) / 수량] 으로 역산하여 정수로 기입.
-
-[출력 데이터 헤더 구조 - 정확히 10개 열]
-계좌구분,종목명,수량,평균 단가,현재가,현재 수익률 (당일),현재 수익금 (당일 손익),평가금 (잔액),평가 수익률 (누적),평가 수익금 (누적 손익)
-
-각 이미지 앞단에 제공되는 [계좌구분 안내] 텍스트를 참조하여 첫 번째 열을 채우고, 모든 금액은 뒤에 '원'을 붙이고 천 단위 콤마를 포함한 큰따옴표 문자열(예: "10,326,885원")로 감싸서 출력하라.)")
-)
-
-# 6장 이미지를 돌면서 파일 이름 분석 후 제미나이에게 힌트 제공 (기존과 동일)
-for (img in img_files) {
-  fname <- basename(img)
-  
-  account_tag <- "미분류"
-  if (grepl("토스", fname, ignore.case = TRUE)) account_tag <- "토스"
-  if (grepl("isa", fname, ignore.case = TRUE))  account_tag <- "ISA"
-  if (grepl("연금", fname, ignore.case = TRUE)) account_tag <- "연금저축"
-  
-  parts_list[[length(parts_list) + 1]] <- list(
-    text = sprintf("\n[계좌구분 안내]: 바로 다음에 등장하는 이미지는 %s 계좌의 스크린샷입니다.\n", account_tag)
-  )
-  
-  img_base64 <- base64encode(img)
-  parts_list[[length(parts_list) + 1]] <- list(
-    inline_data = list(mime_type = "image/jpeg", data = img_base64)
-  )
-}
-
-# [핵심] temperature = 0 을 추가하여 답변의 일관성을 극대화 (창의성 0%)
-payload_vision <- list(
-  contents = list(list(parts = parts_list)),
-  generationConfig = list(temperature = 0) 
-)
-
-# 기존 v1 주소를 v1beta 주소 체계로 변경하여 프리뷰 모델의 404 에러를 방어합니다.
-url_vision <- sprintf("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent", MODEL_OCR)
-
-res_vision <- request(url_vision) %>%
-  req_url_query(key = API_KEY) %>%
-  req_method("POST") %>%
-  req_headers("Content-Type" = "application/json") %>%
-  req_body_json(payload_vision) %>%
-  req_perform()
-
-asset_text <- resp_body_json(res_vision)$candidates[[1]]$content$parts[[1]]$text
-cat("   ✔ 파일 이름 기반 계좌 매칭 및 CSV 추출 완료!\n\n")
-
-
-# ==============================================================================
-# [육안 검증용] Gemini 추출 CSV 데이터를 R 데이터프레임으로 변환하여 View()로 확인
-# ==============================================================================
-
-# 1. ```csv 코드 블록 내부의 순수 텍스트만 안정적으로 추출
-clean_csv_text <- sub(".*```csv\n", "", asset_text)
-clean_csv_text <- sub("\n```.*", "", clean_csv_text)
-
-# 2. 텍스트 데이터를 R 데이터프레임으로 변환 (strip.white 옵션으로 공백 문자 강제 제거)
-df_portfolio_final <- read.csv(text = clean_csv_text,
-                               check.names = FALSE,
-                               stringsAsFactors = FALSE,
-                               strip.white = TRUE)
-
-# 3. 데이터프레임 내 잔여 큰따옴표나 불필요한 공백 문자열 최종 청소
-df_portfolio_final[] <- lapply(df_portfolio_final, function(x) gsub('"', '', x))
-
-# 4. RStudio 상단 그리드 뷰어로 표 띄우기
-View(df_portfolio_final)
-
-
-# ------------------------------------------------------------------------------
-# 2단계: R 크롤러 엔진 구동 및 실시간 금융 지표 데이터 연동
-# ------------------------------------------------------------------------------
-cat("=== 🔄 2단계: D:/Not_Pretence 폴더 내 pdf_finace_260617.R 구동 시작 ===\n")
-
-# 1. 지정된 절대 경로에 파일이 실제로 존재하는지 엄격히 확인
-if(!file.exists(PATH_R_SCRIPT)) {
-  stop(sprintf("❌ 스크립트 파일을 찾을 수 없습니다. 경로를 확인하세요: %s", PATH_R_SCRIPT))
-}
-
-# 2. 크롤러 스크립트 실행 (지표 CSV 최신화)
-source(PATH_R_SCRIPT, encoding = "UTF-8")
-
-# 3. 크롤러가 새로 빌드해놓은 실시간 지표 CSV 파일 로드
-if(!file.exists(PATH_CSV)) {
-  stop(sprintf("❌ 크롤링된 지표 CSV 파일이 존재하지 않습니다: %s", PATH_CSV))
-}
-
-indicator_df <- read.csv(PATH_CSV, check.names = FALSE)
-indicator_text <- jsonlite::toJSON(indicator_df, pretty = TRUE)
-cat("   ✔ D:/Not_Pretence 저장소로부터 스크립트를 호출하여 실시간 금융 지표 구조화 완료!\n\n")
-
-
-
-# ------------------------------------------------------------------------------
-# 3단계: 7단계 프롬프트 내장 선언 및 3분할 파트 정의 (Raw String 기법)
-# ------------------------------------------------------------------------------
-cat("=== ✂ 3단계: 스크립트 내 내장 프롬프트 로드 및 3분할(1-3, 4-5, 6-7) 셋업 ===\n")
-
-# [신규 추가] V3.1 룰북 및 유니버스 종목 리스트 선언
-prompt_system_v3 <- r"([System Prompt: 투자 전략 및 원칙 V3.1]
+### 1. 자산 그룹 정의 및 비중 통제 (Allocation & Weight)
+[System Prompt: 투자 전략 및 원칙 V3.1]
 (## Group A: 단기 투자 (수급/변동성/기술적)
 
 * **기술적 지표 (추세/모멘텀):** RSI(14d), MACD(12,26), ADX(14), STOCH(9,6), STOCHRSI(14), 이동평균선(5/20/60/120)
@@ -262,15 +113,13 @@ RSI & STOCHRSI 역할 분담: RSI는 대세적 위치 및 지지선 파악에 �
 8. 최종 출력 형식
 도출된 모든 매수/매도 전략은 반드시 표(Table) 형태로 출력한다.
 전략의 일관성 유지를 위해 개별 종목은 [단기 전술] 열에, ETF 및 우량주는 [장기 전략] 열에 기재하여 전략의 층위를 시각적으로 명확히 분리한다.
-)"
+)
 
-# ------------------------------------------------------------------------------
-# 3단계: 1~7단계 프롬프트 내장 선언 (단일 통합본)
-# ------------------------------------------------------------------------------
-cat("=== ✂ 3단계: 스크립트 내 내장 프롬프트 로드 (Part 1~3 통합본) ===\n")
+---
 
-prompt_integrated <- r"(
-"반드시 현재 입력하는 데이터만을 사용해서 분석하라! 내부적으로 [단계 1]부터 [단계 7]까지의 분석 단계를 순차적으로 거친 후 최종 결과물을 도출하라."
+## 📝 [7단계 파이프라인 분석 프로토콜]
+
+반드시 현재 입력하는 데이터만을 사용해서 분석하라! 내부적으로 [단계 1]부터 [단계 7]까지의 분석 단계를 순차적으로 거친 후 최종 결과물을 도출하라."
 
 [단계 1] 변수 추출 및 매크로/펀더멘털 선제 필터링 (Diagnostic & Pre-Filtering)
 제공된 파일의 [User Data: 실시간 자산 및 지표 현황] 데이터를 기반으로 다음을 수행하라.
@@ -321,42 +170,8 @@ prompt_integrated <- r"(
 
 [단계 7] 알파 스트레스 테스트 (Structural Alpha Alpha Top 3)
 비중 한도나 계좌 제약을 배제하고, 오직 섹터별 모멘텀과 V3 핵심 지표 결합 관점에서만 순수하게 평가하라. 현재 전체 시장을 주도하는 메가 트렌드와 지표 강도를 고려할 때, 향후 가장 압도적인 기대 수익률이 예상되는 Top 3 픽 종목을 선정하고 구조적/기술적 논거를 제시하라.
-)"
-
-# 변수화한 동적 데이터를 프롬프트가 인식할 수 있는 텍스트로 합성
-meta_data_text <- sprintf(
-  "투자 가능 현금 : 토스증권 계좌 %s\nISA계좌는 %s\n연금계좌는 %s\n\n3) Fear & Greed Index\n%d\n\n4) USD/KRW\n현재환율: %.2f\n1년평균환율: %.2f",
-  USER_CASH_TOSS, USER_LIMIT_ISA, USER_LIMIT_PEN, MACRO_FEAR_GREED, MACRO_USD_KRW_NOW, MACRO_USD_KRW_AVG
 )
+---
 
-# [수정된 데이터 덩어리 구조화] V3.1 룰북과 메타데이터를 모두 포함하도록 수정
-user_data_chunk <- paste0(
-  "\n\n========================================================",
-  "\n", prompt_system_v3,   # V3.1 마스터 룰북 주입
-  "\n========================================================",
-  "\n[User Data: 실시간 자산 및 지표 현황]",
-  "\n", meta_data_text,     # 계좌 제약조건 및 매크로 지표 주입
-  "\n\n### 1) 포트폴리오 보유 종목 현황 (OCR 통합 결과)\n", asset_text,
-  "\n\n### 2) 보유종목 및 비보유종목 지표 현황 (R 크롤링 결과)\n", indicator_text,
-  "\n========================================================\n"
-)
-
-
-# ------------------------------------------------------------------------------
-# 4단계: Jules 분석용 실시간 데이터 스냅샷 저장 및 종료 (API 호출 없음)
-# ------------------------------------------------------------------------------
-cat("=== 💾 4단계: Jules 가상 VM이 읽을 최신 실시간 데이터 스냅샷 저장 ===\n")
-
-# Jules에게 넘겨줄 텍스트 데이터 묶기
-realtime_payload <- paste0(
-  "## [실시간 금융 데이터 현황]\n\n",
-  "### 1) 보유 종목 현황 (OCR)\n", asset_text, "\n\n",
-  "### 2) 지표 현황 (크롤링)\n", indicator_text, "\n\n",
-  "### 3) 계좌 제약 및 매크로 변수\n", meta_data_text
-)
-
-# 텍스트 파일로 내보내기 (이 파일을 Jules가 읽고 분석합니다)
-output_file <- file.path(BASE_DIR, "realtime_snapshot.txt")
-writeLines(realtime_payload, output_file, useBytes = TRUE)
-
-cat(sprintf("✔ '%s' 저장 완료. 외부 API 호출을 막기 위해 스크립트를 여기서 종료합니다.\n", output_file))
+## 💾 [최종 출력 지침]
+Agent A와 Agent B의 시뮬레이션 의견을 Judge Chat(CIO)이 룰북에 기반하여 크로스 체크 및 최종 조율한 결과를 반드시 `Final_Execution_Report_Debate.md`라는 단일 파일로 작성하여 저장소에 생성하라.
