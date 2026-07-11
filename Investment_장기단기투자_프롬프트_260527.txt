@@ -1,0 +1,651 @@
+[System Prompt: 투자 전략 및 원칙]
+Group A: 단기 투자 (수급/변동성/기술적)기술적 지표 (추세/모멘텀): RSI(14d), MACD(12,26), ADX(14), STOCH(9,6), STOCHRSI(14), 이동평균선(5/20/60/120)   수급 및 변동성: 거래량, 3개월 평균 거래량, 일일 변동폭, 52주 변동폭, ATR(14), 호가(Bid/Ask), 베타(Beta), 외인소진율   ETF 특화: 괴리율   
+Group A 종목 : 
+종목명,자산 성격
+마이크론 테크놀로지 (개별 성장주)
+인텔 (개별 기술주)
+팔란티어 테크놀로지스 (개별 기술주)
+버티브 홀딩스 (개별 성장주)
+LIG디펜스앤에어로스페이스 (방산 개별 변동성주 - 기존 LIG넥스원과 동일 성격)
+현대로템 (개별 변동성주)
+엔씨소프트 (개별 변동성주)
+GE 버노바 (개별 성장주)
+모더나 (개별 성장/변동성주)
+YPF ADR (개별 변동성/시클리컬주)
+
+Group B: 장기 투자 (기본적 분석/가치/성장)가치 및 수익성: PER, 추정 PER, PBR, BPS, ROE, ROA, 매출총이익률, EV/EBITDA   산업별 가중치: IT/일반 제조는 ROE, 금융/리츠는 ROA를 우선함   장치/시클리컬: 반도체·전력기기는 PER 대신 EV/EBITDA와 52주 최저가 근접도를 결합하여 판단함   성장성: EPS, EPS 성장 전망   인컴 및 비용: 배당수익률, 최근 1년 배당금(TTM), 연속 배당 기록, 총보수(Expense Ratio)   ETF 특화: NAV(순자산가치)   
+Group B 종목 : 
+종목명,자산 성격
+KODEX 미국S&P500 (지수 ETF - Core)
+KODEX 미국S&P500(H) (지수 ETF - Core)
+Schwab US Dividend Equity ETF [SCHD] (배당 ETF)
+SOL 미국배당다우존스(H) (배당 ETF)
+JPMorgan Nasdaq Equity Premium Income ETF [JEPQ] (고배당 커버드콜 ETF)
+삼성전자 (우량주 - Blue-chip)
+SK하이닉스 (우량주 - Blue-chip)
+현대차 (우량주 / 시클리컬 가치주)
+일라이 릴리 (우량주 - Blue-chip)
+마이크로소프트 (우량주 - 핵심 IT 성장주)
+알파벳 Class C (우량주 - 핵심 IT 성장주)
+화이자 (우량 방어주 / 가치주)
+델타 에어라인스 (장치/시클리컬 가치주)
+리얼티 인컴 (리츠 - REITs)
+
+전술적 장기 (수익 극대화 및 리스크 필터링)주도 장세 필터링: ADX(14) 30 이상 시 과매수라도 홀딩(시나리오 A), ADX 25 미만 또는 하락 시 적극 익절(시나리오 B)   진짜 눌림목(1순위 타점) 승인 조건:  지표: MACD 0 이상(상승 방향성), ADX 25 이상(추세 강도), STOCHRSI 20 미만(과매도), RSI 40~50(지지 확인)   거래량 필터: 당일 거래량이 3개월 평균의 1.0배 이하일 때만 승인(패닉 셀링 방지). 1.5배 초과 시 진입 금지   [추가] 코어 자산 딥밸류 무한매집: RSI 30 미만, 120일선 하회, 52주 최저가 대비 +5% 이내, 하락 브레이크 확인 시 비중 한도 무관하게 매집   
+전술적 장기 종목 : 
+종목명,자산 성격
+VanEck Semiconductor ETF [SMH] (섹터 ETF - 글로벌 반도체)
+TIGER 미국테크TOP10 INDXX(H) (섹터 ETF - 빅테크)
+HANARO 미국AI메모리반도체TOP4+ (테마 ETF - 미국 반도체)
+KoAct 글로벌AI메모리반도체액티브 (섹터/테마 ETF)
+HANARO Fn K-반도체 (섹터 ETF - 국내 반도체)
+DRAM (섹터 테마 ETF/인덱스)
+KODEX AI전력핵심설비 (테마 ETF - 전력 인프라)
+TIGER 코리아AI전력기기TOP3플러스 (테마 ETF - 국내 전력)
+First Trust NASDAQ Cln Edge Smart Grid Infra Ix Fd [GRID] (섹터 ETF - 스마트그리드)
+PAVE (Global X Infrastructure) (섹터 ETF - 인프라)
+TIGER 미국우주테크 (테마 ETF - 우주항공)
+iShares Genomics Immunology and Healthcare ETF [IDNA] (테마 ETF - 바이오/유전학)
+
+[추가 지침: 자산 그룹 정의 및 운용 우선순위]
+1. 자산 그룹별 목표 비중 정의 (Explicit Allocation)
+   - **Group B (장기 투자, 목표 비중 65%)**: 지수/배당 ETF, 우량주, 안전자산을 포함한 전체 종목군.
+   - **Group A (단기 투자) 및 전술적 장기 (목표 비중 합산 35%)**: 개별 변동성 종목, 섹터/테마 ETF를 포함한 전체 종목군.
+
+2. 수익 기회 우선 원칙 (Profit over Allocation Priority)
+   - [제1원칙] 개별 종목이 '진짜 눌림목(1순위 타점)' 또는 '예외 1(딥밸류 무한매집)' 조건을 완벽하게 충족하는 경우, 해당 종목이 속한 자산 그룹의 목표 비중 한도 초과 여부와 무관하게 매수를 최우선으로 집행한다.
+   - [제2원칙] 포트폴리오 비중 관리는 기존 자산의 기계적 매도가 아닌, '신규 자금의 차등 배분'을 통해 점진적으로 교정하는 것을 원칙으로 한다[cite: 9]. 즉, '압도적인 수익 타점'이 포트폴리오 '비중 밸런스'보다 상위의 판단 기준이다.
+
+
+ ##################################################################
+ [매우중요] 레포트 작성 원칙 및 시스템 작동 알고리즘
+ ##################################################################
+ 
+# [시스템 알고리즘] 포트폴리오 운용 지침 V2
+
+## 1. 기본 운용 기준 (Core Standards)
+
+* **분석 대상:** 제공된 자산 현황, 지표 현황, 공포/탐욕 지수, 환율(USD/KRW) 데이터만 반영. *외부 심리 지수 전면 배제.*
+* **시간축 분리:** [단기 관점: 1, 2, 4주] 및 [중장기 관점: 3, 6개월 이상] 결과물을 명확히 이원화하여 출력.
+* **집행 규칙:** 국내 주식/ETF는 ISA 및 연금저축 계좌 활용 조건 명시, 증권사 계좌별 매수 시기/금액 철저 분리. 한국 시장은 소수점 거래 불가하므로 [현재가] 기준 정수 수량 산출.
+
+## 2. 자금 배분 및 비중 통제 (Allocation & Weight)
+
+* **목표 비중 (절대 기준):** Group B (65%) : Group A 및 전술적 장기 (35%)
+* **신규 현금 배분:** Group B 목표 충족 시 -> 신규 현금은 Group A 및 전술적 장기 자산에 우선 배분.
+* **절대 상한선:** Group A + 전술적 장기 합산 비중은 **최대 50% 제한**. 초과 시 신규 진입 금지 -> 기존 자산 내 로테이션만 허용 *(모멘텀 훼손된 MACD < 0 종목 매도 후 1순위 타점 종목 교체).*
+* **리밸런싱 허용 오차 (Tolerance Band):**
+* *일반 자산:* 자산 그룹 전체 비중 ±5%p 이탈 또는 개별 종목 비중이 목표 대비 ±10%p 초과 이탈 시 실행.
+
+## 3. 기술적 지표 매트릭스 및 교차 검증 (Technical Matrix)
+
+* **RSI & STOCHRSI 역할 분담:** RSI = 대세적 위치 파악(환경), STOCHRSI = 세부 타이밍 포착(실행 트리거).
+* **1순위 진입 타점 (신규/불타기):** MACD ≥ 0 (또는 주가 > MA3/60일선) AND ADX(14) ≥ 25 AND STOCHRSI < 20 AND RSI 40~50 (눌림목 지지).
+* *휩쏘 차단 필터:* STOCHRSI < 20 진입 시, 원천 지표인 STOCH(9,6) ≤ 40 동반 충족 필수.
+* *진입 금지:* 하락 방향에서 ADX 급등(대세 폭락장) 시 진입 절대 금지. RSI ≥ 70(과매수) 종목은 신규 자금 투입 배제.
+
+* **현금 포지셔닝:** 포트폴리오 내 1순위 타점이나 극단적 저평가 종목이 전무할 경우(정기 적립 제외), 무리한 매수 없이 **현금 100% 보유(Hold)**.
+* **환율 리스크 대응 (USD/KRW):** 환율 1,400원 이상 시 해외 자산 신규 진입 극도로 제한. 단, Group B 자산의 딥밸류 또는 1순위 타점 발생 시 **환헤지(H) ETF를 통해서만 우회 진입** 허용.
+* **심리 지수 연동:** 공포/탐욕 지수 ≤ 20 (극단적 공포) 시, 기술적 지표가 다소 미달하더라도 [예외 1(딥밸류)] 우선순위를 높여 공격적 방어 매집 검토.
+
+## 4. 리스크 관리 및 청산 프로토콜 (Risk & Exit)
+
+* **단기 전술 (개별 종목):** 1차 지지선 = 현재가와 가장 가까운 MA3(60일선) 또는 MA4(120일선)로 설정. 이탈하거나 매수 모멘텀(MACD, ADX 등) 무효화 시 즉각 비중 축소(Stop-Loss).
+* **전술적 장기 (테마/섹터 ETF):** RSI ≥ 70 또는 MACD < 0 발생 시 부분 익절하되, **ADX(14) 추세 필터링 교차 적용**:
+* *[시나리오 A] 주도 추세 탑승:* 가격이 지지선 지키며 ADX(14) ≥ 30 유지 시 -> 매도 보류(Hold) 또는 최소 비중(10~15%)만 익절.
+* *[시나리오 B] 추세 둔화 확정:* 지표 과열 상태에서 MACD < 0 AND ADX(14) < 25 동반 발생 시 -> 적극적 부분 익절(30~50%).
+
+
+## 5. 시스템 예외 프로토콜 (Pre-emptive Overrides)
+
+* **[예외 1] Group B 자산 딥밸류 무한매집:** 비중 한도와 무관하게 최우선 매집. 단, 4대 조건 동시 만족 필수:
+① 원천 지표 RSI(14) < 30 AND ② 주가 < MA4(120일선) AND ③ 현재가 ≤ 52주 최저가 대비 +5% 이내 AND ④ 당일 거래량 ≤ 3개월 평균 거래량 * 1.0 (투매 진정 확인).
+* **[예외 2] 기계적 적립식 매수 충돌 방지:** 연금저축 및 Group B 정기 적립식 매수는 단기 필터링 무시하고 집행. 비중 초과 시 즉각 매도하지 않고 **현금 흐름 리밸런싱(Cash Flow Rebalancing)** 적용 (차월 신규 자금을 타 자산에 집중 배분).
+* **[예외 3] 거래량 기반 가짜 눌림목 필터링:** 1순위 타점 충족 시에도 당일 거래량 비율 교차 검증:
+* *승인 (진짜 눌림목):* 당일 거래량 ≤ 3개월 평균 * 1.0 -> 건강한 조정으로 간주, 매수 집행.
+* *기각 (가짜 눌림목):* 당일 거래량 ≥ 3개월 평균 * 1.5 급증하며 하락 -> 투매 시작으로 확정, 매수 보류 및 현금 대기.
+
+* **[예외 4] Group B 자산 전략적 피라미딩:** Group B 현재가가 52주 최고가 대비 -10% 도달 시 -> Group A/전술적 장기 매수 중단 후 Group B 전환.
+* *가중 매수:* 최고가 대비 -20% 하락 시 가용 현금 10% 집행. 이후 5% 추가 하락 시마다(-25%, -30%...) 남은 현금의 20%씩 순차 집행.
+* *트리거 조건:* 주가 < MA4 AND RSI(14) < 30 동반 확인 시에만 증액.
+
+* **[예외 5] 하락장(Bear Market) 방어 프로토콜:**
+* *Slow (확정 하락장):* 지수 주가 < MA4 AND 공포/탐욕 지수 < 25 AND RSI(14) < 30 동반 포착 시 선포.
+* *Fast (예비 하락장):* 지수가 MA4 상회 중이어도 현재가 ≤ 52주 최고가 대비 -15% AND RSI(14) < 40 달성 시 -> Group A 및 전술적 장기 자산의 30% 선제적 현금화.
+* *로테이션:* Group A/전술적 장기 수익 종목 50% 익절 후 단기국고채 또는 저변동성(Low Vol) ETF 이동. *(커버드콜은 ADX < 25인 지루한 하락장에서만 활용, 급락장 투입 금지).*
+
+* **[예외 6] 초강력 추세 (ADX 50+) 탑승 승인:** ADX(14) ≥ 50 AND MACD > 0 우상향 시 발동.
+* *완화:* 기존 1순위 타점의 STOCHRSI < 20 조건을 **< 45 미만으로 완화**하여 진입 트리거 적용.
+* *안전장치:* 현재가가 MA3(60일선) 대비 +15% 이상 괴리 시 신규 진입 금지(보유 비중만 유지).
+* *자금 제한:* 이 로직의 진입 수량은 목표 비중의 50% 이내 제한, 잔여 50%는 기존 1순위 타점(STOCHRSI < 20) 발생 시 매수.
+
+* **[예외 7] 데이터 공백(NA) 대응 최소 운용 프로토콜 (MVP):** 핵심 지표 중 2개 이상이 NA일 때 적용.
+* *승인 기준 (동시 만족):* ① 현재가 > MA2(20일선) 정배열 초기 AND ② 당일 거래량 ≥ 5거래일 평균 * 1.3 이상 증가 AND ③ 당일 변동폭(Day's Range) ≤ 5일 평균 변동폭 이내 (안정적 우상향).
+* *자금 제한:* 진입 수량은 목표 비중의 30% 이내 제한, 추후 데이터 축적 시 1순위 타점 요건 검토 후 피라미딩.
+
+## 6. 다중공선성 통제 및 지표 융합 (Multicollinearity Control)
+
+* **수익성 지표:** ROE와 ROA 단순 합산 금지. 금융/리츠 = ROA 선택, 일반 IT/제조업 = ROE 선택 적용.
+* **가치평가 지표:** EPS = 성장성, PER = 저평가로 분리. 반도체/전력기기 등 장치·시클리컬 산업은 PER 대신 **EV/EBITDA와 52주 최저가 근접도**를 결합하여 최우선 평가.
+* **수급/변동성 융합:** 거래량 지표는 '3개월 평균 대비 당일 거래량 비율'로 단일화. 일상 변동성 검증 위해 Day's Range와 ATR(14) 결합 해석.
+* **기술적 지표 교차 검증:** RSI 단독 판단 배제 및 STOCHRSI 결합. MACD(방향)와 ADX(강도) 필수 융합. *(ADX가 높아도 MACD < 0 이면 강력한 하락 추세이므로 예외 1 외 매수 전면 금지).*
+
+## 7. 섹터별·자산군별 특화 프로토콜 (Sector Specific)
+
+* **① 제약·바이오·헬스케어 (성장성/수급 중심):**
+* *밸류에이션:* 과거 PER/EPS 배제. 추정 PER과 EPS 성장 전망을 연동한 **PEG 관점** 핵심 적용.
+* *모트 검증:* 매출총이익률(GPM) 최소 40% 이상 종목만 스크리닝.
+* *수급/리스크:* 국내 바이오는 **외인소진율 3일 연속 우상향** 필수. Beta > 1.5 고변동성 종목은 1회 진입 수량을 목표 비중의 50%로 제한.
+* *타점:* RSI(14) 40~50 구간 하방 경직 확보 AND STOCHRSI(14) ≤ 20 눌림목 진입.
+
+* **② 방산·우주항공·중공업 (자산/수주 모멘텀 중심):**
+* *밸류에이션:* PER 대신 **EV/EBITDA** 우선 적용, BPS 우상향 필수. 금융 지표인 ROA 배제, **PBR 1.5배 이하 AND ROE 10% 이상** 선별.
+* *추세 확정:* 외인소진율 누적 순매수 전환 AND 거래량 ≥ 3개월 평균 * 1.2배 급증 AND MACD > 0선 위 양수 전환 시 비중 확대 승인.
+
+* **③ 항공·운송 및 신재생에너지 (경기민감 고변동성 중심):**
+* *바닥 포착:* EV/EBITDA 역사적 하단 위치 AND 현재가가 52주 최저가 대비 +10% 이내 진입 시 1차 바닥 인식.
+* *추세 돌파:* 당일 변동폭 > ATR(14) * 1.5배 초과 AND ADX(14) ≥ 25 턴어라운드 시 추세 전환 판정.
+* *출구 전략:* 고Beta 특성 방어 위해 주가가 MA3(60일선) 또는 MA4(120일선) 기계적 이탈 시 즉각 손절 또는 비중 30% 이상 축소.
+
+* **④ 특정 산업 분류 불가 자산 (지수 및 배당 ETF):**
+* *가. 시장 대표 지수형 (KODEX 200, S&P500 등):* 동일 지수 중 총보수(Expense Ratio) 최저 상품 선택. 호가 스프레드 2호가 이내 제한. 괴리율 > 0.3% 고평가 시 신규 매수 제한 (적립식은 NAV 이하 가격 체결 지향).
+* *나. 고배당·배당성장형 (SCHD 등):* 배당수익률 및 Dividends(TTM) 과거 3년 밴드 추적. 현재 배당수익률이 밴드 평균값 이상일 때 가중치 부여. RSI ≤ 40 또는 STOCH(9,6) ≤ 30 단기 과매도 시 예외 2 외 가용 현금 10% 추가 피라미딩 허용.
+
+## 8. 최종 출력 형식
+도출된 모든 매수/매도 전략은 반드시 표(Table) 형태로 출력한다.
+전략의 일관성을 유지하기 위해 개별 종목은 [단기 전술] 칸에, ETF 및 우량주는 [장기 전략] 칸을 위주로 작성하여 전략의 층위를 시각적으로 명확히 분리한다.
+
+
+[User Data: 실시간 자산 및 지표 현황]
+현재 시간은 한국시간 2026년 06월 05일 16:20 이다
+
+투자 가능 현금 :  토스증권 계좌 2,000,000원
+ISA계좌는 올해 한도 마감됨.
+연금계좌는 올해 한도 마감됨. 계좌 현금 납입은 가능 세액은 내년 납입분으로 공제 가능 
+"절대로 무조건 완벽하게 정확히 파악"할 것**
+
+[가장중요] 입력한 자산은 "절대로 무조건 완벽하게 정확히 파악"할 것**
+
+**[가장중요] 중복 입력한 자산은 다른 증권 계좌 데이터를 가지고 온 것이니, 계좌별로 수량과 금액을 파악할 것**
+
+1) 포트폴리오 보유 종목 현황
+
+토스)
+종목명,수량,평균 단가,현재가,현재 수익률 (당일),현재 수익금 (당일 손익),평가금 (잔액),평가 수익률 (누적),평가 수익금 (누적 손익)
+삼성전자,28주,"241,678원","327,000원",-6.9%,"-677,266원","9,137,688원",+35.0%,"+2,370,688원"
+KODEX 미국S&P500(H),646주,"16,485원","16,915원",+0.1%,"+10,916원","10,927,090원",+2.6%,"+277,780원"
+SK하이닉스,6주,"1,563,444원","2,034,000원",-11.4%,"-1,567,787원","12,185,580원",+29.9%,"+2,804,913원"
+SMH,18주,"695,961원","934,754원",-2.5%,"-431,041원","16,810,591원",+34.1%,"+4,283,281원"
+델타 항공,5주,"120,707원","121,065원",-0.3%,"-1,818원","604,131원",+0.09%,+594원
+마이크로소프트,4.973336주,"627,405원","652,223원",-0.3%,"-9,750원","3,238,690원",+3.7%,"+118,391원"
+알파벳 C,1주,"579,624원","559,024원",-0.9%,"-5,076원","557,924원",-3.7%,"-21,699원"
+일라이 릴리,3주,"1,463,175원","1,720,729원",+0.03%,"+1,545원","5,152,646원",+17.3%,"+763,121원"
+SCHD,257.547021주,"46,066원","49,847원",+0.06%,"+7,681원","12,809,606원",+7.9%,"+945,225원"
+YPF(ADR),72주,"70,690원","84,363원",+0.1%,"+6,057원","6,063,023원",+19.1%,"+973,277원"
+
+ISA)
+종목명,수량,평균 단가,현재가,현재 수익률 (당일),현재 수익금 (당일 손익),평가금 (잔액),평가 수익률 (누적),평가 수익금 (누적 손익)
+SOL 미국배당다우존스(H),809주,"12,420원","12,795원",+0.75%,"+76,855원","10,351,155원",+3.01%,"+302,910원"
+HANARO 미국AI메모리반도체TOP4+,414주,"9,339원","11,905원",-4.11%,"-211,140원","4,928,670원",+27.46%,"+1,062,015원"
+KODEX 미국S&P500,177주,"23,411원","26,280원",+0.82%,"+38,055원","4,651,560원",+12.25%,"+507,727원"
+KoAct 글로벌AI메모리반도체액티브,206주,"14,490원","17,305원",-4.89%,"-183,340원","3,564,830원",+19.42%,"+579,885원"
+
+연금)
+종목명,수량,평균 단가,현재가,현재 수익률 (당일),현재 수익금 (당일 손익),평가금 (잔액),평가 수익률 (누적),평가 수익금 (누적 수익)
+KODEX 미국S&P500(H),253주,"""16,494원""","""16,915원""",+0.15%,"""+6,419원""","""4,279,495원""",+2.55%,"""+106,490원"""
+HANARO 미국AI메모리반도체TOP4+,193주,"""9,692원""","""11,905원""",-4.11%,"""-94,434원""","""2,297,665원""",+22.83%,"""+427,075원"""
+SOL 미국배당다우존스(H),53주,"""12,475원""","""12,795원""",+0.75%,"""+5,086원""","""678,135원""",+2.56%,"""+16,930원"""
+TIGER 미국우주테크,35주,"""16,100원""","""15,430원""",+3.84%,"""+20,738원""","""540,050원""",-4.16%,"""-23,469원"""
+ACE 일라이릴리밸류체인,13주,"""12,510원""","""13,020원""",-,-,"""169,260원""",+4.07%,"""+6,620원"""
+
+
+2) 보유종목 및 비보유종목( 1) 종목 제외) 지표 현황
+
+변수 (종목명)|KIM ACE Eli Lilly Value Chain ETF (497520)|MiraeAsset TIGER Synth-MSCI US REIT ETF(H) (182480)|Samsung Electro-Mechanics (009150)
+Relative Strength Index (14d) / RSI|67.62 (Investing Hourly)|56.435 (Investing Hourly)|46.893 (Investing Hourly)
+MACD (12,26)|112.499 (Investing Hourly)|3.199 (Investing Hourly)|-17034.409 (Investing Hourly)
+ADX (14)|24.788 (Investing Hourly)|36.101 (Investing Hourly)|22.049 (Investing Hourly)
+STOCH (9,6)|99.182 (Investing Hourly)|98.672 (Investing Hourly)|96.438 (Investing Hourly)
+STOCHRSI (14)|84.836 (Investing Hourly)|75.302 (Investing Hourly)|73.574 (Investing Hourly)
+Moving Averages (MA1)|12,800.00 (네이버)|13,413.00 (네이버)|1,883,800.00 (네이버)
+Moving Averages (MA2)|12,315.25 (네이버)|13,596.75 (네이버)|1,342,200.00 (네이버)
+Moving Averages (MA3)|12,149.08 (네이버)|13,279.12 (네이버)|827,158.33 (네이버)
+Moving Averages (MA4)|12,523.06 (네이버)|12,957.56 (네이버)|565,550.00 (네이버)
+ATR (14)|64.1429 (Investing Hourly)|60.3571 (Investing Hourly)|55,928.5714 (Investing Hourly)
+Volume (거래량)|5,535 (Investing)|12,910 (Investing)|1.61M (Investing)
+Average Vol. (3m)|3,202 (Investing)|24,911 (Investing)|947.95K (Investing)
+Day's Range (일일 변동폭)|12,640 - 13,055 (Investing)|13,350 - 13,575 (Investing)|1,615,000 - 1,845,000 (Investing)
+52-Week Range|9,630 - 13,595 (Investing)|12,030 - 14,470 (Investing)|124,000 - 2,192,000 (Investing)
+Bid / Ask (호가)|13,005 / 13,020 (Investing)|13,510 / 13,515 (Investing)|1,756,000 / 1,757,000 (Investing)
+Beta (베타)|1.25 (Investing)|1.16 (Investing)|1.99 (Investing)
+괴리율 (ETF 한정)|-0.12% (네이버)|-0.92% (네이버)|NA
+외인소진율|NA|NA|37.82% (네이버)
+ROE (자기자본이익률)|26.73% (Investing)|11.55% (Investing)|8.8% (Investing)
+ROA (총자산이익률)|12.32% (Investing)|3.89% (Investing)|5.8% (Investing)
+P/E Ratio (PER)|NA|NA|169.88 (Investing) / 165.96배 (네이버)
+추정 PER|NA|NA|106.39배 (네이버)
+EPS (주당순이익)|NA|NA|10,883.92 (Investing) / 10,587원 (네이버)
+EPS Growth Forecast|NA|NA|NA
+Price/Book (PBR)|NA|NA|13.14 (Investing) / 13.52배 (네이버)
+BPS (주당순자산)|NA|NA|129,911.59 (Investing) / 129,912원 (네이버)
+Gross Profit Margin|NA|NA|20.6% (Investing)
+EV/EBITDA|NA|NA|68.2 (Investing)
+NAV (순자산가치)|12,950.80 (Investing)|13,803.67 (Investing)|NA
+Expense Ratio / 총보수|0.80% (Investing) / 0.45% (네이버)|0.38% (Investing) / 0.24% (네이버)|NA
+Dividend Yield (배당수익률)|0.6962% (Investing) / 0.7% (네이버)|3.3133% (Investing) / 3.31% (네이버)|0.13% (Investing)
+Dividends (TTM)|88.00 (Investing)|442.00 (Investing)|2,350.00 (Investing)
+
+변수 (종목명),Samsung KODEX Renewable Energy Active ETF (385510),Microsoft Corporation (MSFT),SanDisk Corporation (SNDK)
+Relative Strength Index (14d) / RSI,33.072 (Investing Hourly),41.168 (Investing Hourly),50.092 (Investing Hourly)
+"MACD (12,26)",-1298.942 (Investing Hourly),-1.91 (Investing Hourly),24.78 (Investing Hourly)
+ADX (14),21.783 (Investing Hourly),37.591 (Investing Hourly),20.586 (Investing Hourly)
+"STOCH (9,6)",92.711 (Investing Hourly),28.456 (Investing Hourly),50.447 (Investing Hourly)
+STOCHRSI (14),68.464 (Investing Hourly),68.185 (Investing Hourly),0 (Investing Hourly)
+Moving Averages (MA1),"48,178.00 (네이버)",441.49 (네이버),"1,752.79 (네이버)"
+Moving Averages (MA2),"52,937.75 (네이버)",422.79 (네이버),"1,542.72 (네이버)"
+Moving Averages (MA3),"48,883.75 (네이버)",404.87 (네이버),"1,085.21 (네이버)"
+Moving Averages (MA4),"41,154.63 (네이버)",423.66 (네이버),772.47 (네이버)
+ATR (14),727.1429 (Investing Hourly),3.7498 (Investing Hourly),48.6417 (Investing Hourly)
+Volume (거래량),"179,102 (Investing) / 179,107 (네이버)","26.9M (Investing) / 26,899,511 (네이버)","10.52M (Investing) / 10,518,493 (네이버)"
+Average Vol. (3m),"506,170 (Investing)",34.47M (Investing),15.82M (Investing)
+Day's Range (일일 변동폭),"44,180 - 46,845 (Investing/네이버)",426.41 - 436.15 (Investing/네이버),"1,725.08 - 1,825.90 (Investing/네이버)"
+52-Week Range,"21,285 - 61,465 (Investing/네이버)",356.28 - 555.45 (Investing/네이버),"38.53 - 1,861.00 (Investing/네이버)"
+Bid / Ask (호가),"45,210.00 / 45,250.00 (Investing)",NA,NA
+Beta (베타),1.56 (Investing),1.09 (Investing),NA
+괴리율 (ETF 한정),0.04% (네이버),NA,NA
+외인소진율,NA,NA,NA
+ROE (자기자본이익률),6.46% (Investing),34% (Investing),39.3% (Investing)
+ROA (총자산이익률),3.17% (Investing),19.9% (Investing),30% (Investing)
+P/E Ratio (PER),NA,25.51 (Investing) / 25.47 (네이버),59.70 (Investing) / 59.80 (네이버)
+추정 PER,NA,NA,NA
+EPS (주당순이익),NA,16.7898 (Investing) / 16.81 (네이버),29.706 (Investing) / 29.43 (네이버)
+EPS Growth Forecast,NA,NA,NA
+Price/Book (PBR),NA,7.66 (Investing) / 7.67 (네이버),18.92 (Investing) / 18.90 (네이버)
+BPS (주당순자산),NA,55.8 (Investing) / 55.78 (네이버),93.34 (Investing) / 93.09 (네이버)
+Gross Profit Margin,NA,68.3% (Investing),56% (Investing)
+EV/EBITDA,NA,17.28 (Investing),45.66 (Investing)
+NAV (순자산가치),"50,873.61 (Investing) / 45,371 (네이버)",NA,NA
+Expense Ratio / 총보수,0.56% (Investing) / 0.5% (네이버),NA,NA
+Dividend Yield (배당수익률),0.0211% (Investing) / 0.02% (네이버),0.85% (Investing/네이버),NA
+Dividends (TTM),10.00 (Investing),3.64 (Investing/네이버),NA
+
+변수 (종목명),YPF Sociedad Anonima (YPF),Delta Air Lines Inc (DAL),Alphabet Inc Class C (GOOG)
+Relative Strength Index (14d) / RSI,56.259 (Investing Hourly)   PDF,47.477 (Investing Hourly)   PDF,55.043 (Investing Hourly)   PDF
+"MACD (12,26)",0.494 (Investing Hourly)   PDF,-0.46 (Investing Hourly)   PDF,-1.29 (Investing Hourly)   PDF
+ADX (14),22.145 (Investing Hourly)   PDF,27.417 (Investing Hourly)   PDF,29.836 (Investing Hourly)   PDF
+"STOCH (9,6)",65.258 (Investing Hourly)   PDF,35.596 (Investing Hourly)   PDF,88.039 (Investing Hourly)   PDF
+STOCHRSI (14),23.45 (Investing Hourly)   PDF,69.454 (Investing Hourly)   PDF,98.544 (Investing Hourly)   PDF
+Moving Averages (MA1),54.62 (Naver)   PDF,80.45 (Naver)   PDF,366.47 (Naver)   PDF
+Moving Averages (MA2),48.51 (Naver)   PDF,75.55 (Naver)   PDF,383.32 (Naver)   PDF
+Moving Averages (MA3),44.56 (Naver)   PDF,69.78 (Naver)   PDF,342.38 (Naver)   PDF
+Moving Averages (MA4),40.48 (Naver)   PDF,69.38 (Naver)   PDF,330.23 (Naver)   PDF
+ATR (14),0.5894 (Investing Hourly)   PDF,0.7146 (Investing Hourly)   PDF,3.5059 (Investing Hourly)   PDF
+Volume (거래량),"1,202,726 (Investing/Naver)   PDF+ 1","4.84M (Investing) / 4,843,362 (Naver)   PDF+ 2","37.75M (Investing) / 37,746,166 (Naver)   PDF+ 2"
+Average Vol. (3m),NA,11.14M (Investing)   PDF+ 1,19.85M (Investing)   PDF+ 1
+Day's Range (일일 변동폭),54.00 - 55.66 (Investing)   PDF+ 1,78.85 - 80.44 (Investing)   PDF+ 2,354.80 - 369.86 (Investing)   PDF
+52-Week Range,22.82 - 56.15 (Investing)   PDF,45.28 - 83.83 (Investing)   PDF+ 1,163.33 - 404.47 (Investing)   PDF+ 1
+Bid / Ask (호가),NA,NA,NA
+Beta (베타),NA,1.25 (Investing)   PDF+ 1,NA
+괴리율 (ETF 한정),NA,NA,NA
+외인소진율,NA,NA,NA
+ROE (자기자본이익률),NA,25% (Investing)   PDF+ 1,38.9% (Investing)   PDF+ 1
+ROA (총자산이익률),NA,5.5% (Investing)   PDF+ 1,27.2% (Investing)   PDF+ 1
+P/E Ratio (PER),19.14 (Naver)   PDF,11.39 (Naver) / 11.54 (Investing)   PDF+ 1,27.27 (Naver) / 28.32 (Investing)   PDF+ 1
+추정 PER,NA,NA,NA
+EPS (주당순이익),"4,142.96 (Naver)   PDF",6.98 (Naver) / 6.8525 (Investing)   PDF+ 1,13.54 (Naver) / 13.1073 (Investing)   PDF+ 1
+EPS Growth Forecast,NA,NA,NA
+Price/Book (PBR),2.49 (Naver)   PDF,2.56 (Naver) / 2.54 (Investing)   PDF+ 1,9.35 (Naver) / 9.05 (Investing)   PDF+ 1
+BPS (주당순자산),"31,836.00 (Naver)   PDF",31.01 (Naver)   PDF,39.51 (Naver) / 39.58 (Investing)   PDF+ 1
+Gross Profit Margin,NA,19.9% (Investing)   PDF+ 1,60.4% (Investing)   PDF+ 1
+EV/EBITDA,NA,8.28 (Investing)   PDF+ 1,26 (Investing)   PDF+ 1
+NAV (순자산가치),NA,NA,NA
+Expense Ratio / 총보수,NA,NA,NA
+Dividend Yield (배당수익률),NA,0.95% (Naver) / 0.94% (Investing)   PDF+ 1,0.25% (Naver) / 0.24% (Investing)   PDF+ 1
+Dividends (TTM),NA,0.75 (Naver)   PDF,0.88 (Naver)   PDF
+
+변수 (종목명),Moderna (MRNA),NH-Amundi HANARO US AI Memory Semiconductor Top4+ (0181B0),Samsung KODEX 200 (069500)
+Relative Strength Index (14d) / RSI,71.79 (Investing Hourly),50.46 (Investing Hourly),38.74 (Investing Hourly)
+"MACD (12,26)",1.28 (Investing Hourly),114.919 (Investing Hourly),-1252.826 (Investing Hourly)
+ADX (14),72.608 (Investing Hourly),24.388 (Investing Hourly),35.486 (Investing Hourly)
+"STOCH (9,6)",88.474 (Investing Hourly),83.147 (Investing Hourly),93.127 (Investing Hourly)
+STOCHRSI (14),78.978 (Investing Hourly),0 (Investing Hourly),24.323 (Investing Hourly)
+Moving Averages (MA1),47.91 (Naver),"11,810.00 (Naver)","137,509.00 (Naver)"
+Moving Averages (MA2),48.82 (Naver),NA,"125,192.00 (Naver)"
+Moving Averages (MA3),50.37 (Naver),NA,"101,121.75 (Naver)"
+Moving Averages (MA4),46.01 (Naver),NA,"86,271.21 (Naver)"
+ATR (14),1.0161 (Investing Hourly),179.2857 (Investing Hourly),2626.0714 (Investing Hourly)
+Volume (거래량),"6.71M (Investing) / 6,709,675 (Naver)","996,368 (Investing) / 997,304 (Naver)","22,434,154 (Investing) / 22,442,847 (Naver)"
+Average Vol. (3m),7.01M (Investing),"1,267,379 (Investing)","18,477,520 (Investing)"
+Day's Range (일일 변동폭),48.94 - 51.90 (Investing),"11,605 - 12,140 (Investing)","128,485 - 134,560 (Investing)"
+52-Week Range,22.28 - 59.55 (Investing),"9,200 - 12,455 (Investing)","38,290 - 143,645 (Investing)"
+Bid / Ask (호가),NA,"11,930 / 11,875 (Naver)","130,551 / 12,490 (Naver)"
+Beta (베타),NA,NA,0.92 (Investing)
+괴리율 (ETF 한정),NA,-1.28% (Naver),-0.10% (Naver)
+외인소진율,NA,NA,NA
+ROE (자기자본이익률),-36.6% (Investing),NA,16.87% (Investing)
+ROA (총자산이익률),-26.4% (Investing),NA,10.25% (Investing)
+P/E Ratio (PER),-6.34 (Investing),NA,NA
+추정 PER,NA,NA,NA
+EPS (주당순이익),-8.1636 (Investing),NA,NA
+EPS Growth Forecast,NA,NA,NA
+Price/Book (PBR),2.63 (Investing),NA,NA
+BPS (주당순자산),18.66 (Naver),NA,NA
+Gross Profit Margin,-69.9% (Investing),NA,NA
+EV/EBITDA,-5.79 (Investing),NA,NA
+NAV (순자산가치),NA,"11,261.68 (Investing)","135,150.70 (Investing)"
+Expense Ratio / 총보수,NA,0.45% (Investing),0.16% (Investing)
+Dividend Yield (배당수익률),N/A (Investing),NA,0.6069% (Investing)
+Dividends (TTM),N/A (Investing),NA,842.00 (Investing)
+
+변수 (종목명)|SamsungActive KoAct 글로벌AI메모리반도체액티브 (017480)|iShares Genomics Immunology and Healthcare ETF (IDNA)|Pfizer Inc (PFE)
+Relative Strength Index (14d) / RSI|45.265 (Investing Hourly)|62.85 (Investing Hourly)|51.242 (Investing Hourly)
+MACD (12,26)|15.285 (Investing Hourly)|0.17 (Investing Hourly)|-0.03 (Investing Hourly)
+ADX (14)|22.543 (Investing Hourly)|45.362 (Investing Hourly)|25.018 (Investing Hourly)
+STOCH (9,6)|90.108 (Investing Hourly)|88.811 (Investing Hourly)|63.505 (Investing Hourly)
+STOCHRSI (14)|17.965 (Investing Hourly)|81.209 (Investing Hourly)|68.742 (Investing Hourly)
+Moving Averages (MA1)|17,650.00 (네이버)|29.35 (네이버)|25.68 (네이버)
+Moving Averages (MA2)|15,567.75 (네이버)|29.44 (네이버)|25.80 (네이버)
+Moving Averages (MA3)|NA|29.47 (네이버)|26.68 (네이버)
+Moving Averages (MA4)|NA|28.98 (네이버)|26.43 (네이버)
+ATR (14)|326.4286 (Investing Hourly)|0.2019 (Investing Hourly)|0.1751 (Investing Hourly)
+Volume (거래량)|454,293 (Investing) / 454,457 (네이버)|62,365 (Investing) / 62,365 (네이버)|31.27M (Investing) / 31,272,004 (네이버)
+Average Vol. (3m)|500,706 (Investing)|40,047 (Investing)|36.91M (Investing)
+Day's Range (일일 변동폭)|16,915 - 17,800 (Investing)|29.27 - 30.22 (Investing)|25.61 - 26.01 (Investing)
+52-Week Range|10,145 - 19,000 (Investing)|20.15 - 31.41 (Investing)|23.11 - 28.75 (Investing)
+Bid / Ask (호가)|17,305.00 / 17,320.00 (Investing)|NA|NA
+Beta (베타)|NA|0.46 (Investing)|0.31 (Investing)
+괴리율 (ETF 한정)|-1.15% (네이버)|NA|NA
+외인소진율|NA|NA|NA
+ROE (자기자본이익률)|NA| -3.88% (Investing)|8.3% (Investing)
+ROA (총자산이익률)|NA| -8.06% (Investing)|3.6% (Investing)
+P/E Ratio (PER)|NA|NA|19.61 (Investing)
+추정 PER|NA|NA|NA
+EPS (주당순이익)|NA|NA|1.3105 (Investing)
+EPS Growth Forecast|NA|NA|NA
+Price/Book (PBR)|NA|NA|1.6 (Investing)
+BPS (주당순자산)|NA|NA|NA
+Gross Profit Margin|NA|NA|74.8% (Investing)
+EV/EBITDA|NA|NA|7.71 (Investing)
+NAV (순자산가치)|NA|29.45 (Investing)|NA
+Expense Ratio / 총보수|0.5% (네이버)|0.47% (Investing)|NA
+Dividend Yield (배당수익률)|NA|1.0674% (Investing)|6.70% (Investing)
+Dividends (TTM)|NA|0.3084 (Investing)|1.72 (Investing)
+
+변수 (종목명),GE Vernova LLC (GEV),Global X U.S. Infrastructure Development ETF (PAVE),First Trust NASDAQ Clean Edge Smart Grid Infrastructure Index Fund (GRID)
+Relative Strength Index (14d) / RSI,47.962 (Investing),67.194 (Investing),55.92 (Investing)
+"MACD (12,26)",-7.44 (Investing),0.26 (Investing),0.47 (Investing)
+ADX (14),27.216 (Investing),47.117 (Investing),28.595 (Investing)
+"STOCH (9,6)",64.559 (Investing),73.507 (Investing),57.143 (Investing)
+STOCHRSI (14),62.707 (Investing),69.526 (Investing),44 (Investing)
+Moving Averages (MA1),962.24 (네이버),56.82 (네이버),195.61 (네이버)
+Moving Averages (MA2),"1,023.69 (네이버)",56.09 (네이버),194.04 (네이버)
+Moving Averages (MA3),981.77 (네이버),54.18 (네이버),181.53 (네이버)
+Moving Averages (MA4),857.57 (네이버),52.96 (네이버),172.57 (네이버)
+ATR (14),14.5757 (Investing),0.2617 (Investing),1.0143 (Investing)
+Volume (거래량),"2,180,354 (Investing/네이버)","1,184,211 (Investing/네이버)","429,609 (Investing/네이버)"
+Average Vol. (3m),2.51M (Investing),"1,634,991 (Investing)","727,431 (Investing)"
+Day's Range (일일 변동폭),923.00 - 968.75 (Investing/네이버),57.10 - 57.68 (Investing/네이버),194.39 - 197.47 (Investing/네이버)
+52-Week Range,"458.65 - 1,181.95 (Investing/네이버)",41.65 - 58.55 (Investing/네이버),131.86 - 199.99 (Investing/네이버)
+Bid / Ask (호가),NA,NA,NA
+Beta (베타),NA,0.96 (Investing),NA
+괴리율 (ETF 한정),NA,NA,NA
+외인소진율,NA,NA,NA
+ROE (자기자본이익률),83.2% (Investing),19.54% (Investing),21.01% (Investing)
+ROA (총자산이익률),14.7% (Investing),8.39% (Investing),NA
+P/E Ratio (PER),28.21 (Investing) / 47.77 (네이버),NA,NA
+추정 PER,NA,NA,NA
+EPS (주당순이익),34.174 (Investing) / 20.16 (네이버),NA,NA
+EPS Growth Forecast,NA,NA,NA
+Price/Book (PBR),18.52 (Investing) / 18.59 (네이버),NA,NA
+BPS (주당순자산),51.81 (네이버),NA,NA
+Gross Profit Margin,20.3% (Investing),NA,NA
+EV/EBITDA,74.06 (Investing),NA,NA
+NAV (순자산가치),NA,56.31 (Investing/네이버),190.81 (Investing) / 197.06 (네이버)
+Expense Ratio / 총보수,NA,0.47% (Investing),0.56% (Investing)
+Dividend Yield (배당수익률),0.21% (Investing/네이버),0.7657% (Investing),0.7653% (Investing)
+Dividends (TTM),2.00 (Investing/네이버),0.4387 (Investing),1.5088 (Investing)
+
+변수 (종목명),현대로템 (064350),TIGER 코리아AI전력기기TOP3 플러스 (0117V0),TIGER 미국우주테크 (0183J0)
+Relative Strength Index (14d) / RSI,42.364 (Investing Hourly)   PDF,32.992 (Investing Hourly)   PDF,44.614 (Investing Hourly)   PDF
+"MACD (12,26)",-3686.521 (Investing Hourly)   PDF,-661.465 (Investing Hourly)   PDF,-355.506 (Investing Hourly)   PDF
+ADX (14),42.252 (Investing Hourly)   PDF,51.407 (Investing Hourly)   PDF,42.29 (Investing Hourly)   PDF
+"STOCH (9,6)",96.084 (Investing Hourly)   PDF,88.642 (Investing Hourly)   PDF,93.198 (Investing Hourly)   PDF
+STOCHRSI (14),95.593 (Investing Hourly)   PDF,55.411 (Investing Hourly)   PDF,92.594 (Investing Hourly)   PDF
+Moving Averages (MA1),"200,120 (네이버)   PDF","24,101.00 (네이버)   PDF","16,251.00 (네이버)   PDF"
+Moving Averages (MA2),"206,885 (네이버)   PDF","27,306.50 (네이버)   PDF","14,397.50 (네이버)   PDF"
+Moving Averages (MA3),"209,091.67 (네이버)   PDF","22,246.50 (네이버)   PDF",NA
+Moving Averages (MA4),"207,900 (네이버)   PDF","18,341.67 (네이버)   PDF",NA
+ATR (14),4942.8571 (Investing Hourly)   PDF,456.0714 (Investing Hourly)   PDF,303.4286 (Investing Hourly)   PDF
+Volume (거래량),"406.64K (Investing) / 408,005 (네이버)   PDF+ 2","2,470,661 (Investing) / 2,472,051 (네이버)   PDF+ 1","14,146,438 (Investing) / 14,178,213 (네이버)   PDF+ 1"
+Average Vol. (3m),840.87K (Investing)   PDF,"4,590,362 (Investing)   PDF","13,990,162 (Investing)   PDF"
+Day's Range (일일 변동폭),"183,000 - 195,400 (Investing)   PDF","21,880 - 23,230 (Investing)   PDF","15,175 - 15,885 (Investing)   PDF"
+52-Week Range,"148,700 - 282,000 (Investing)   PDF","10,175 - 32,990 (Investing)   PDF","9,475 - 19,545 (Investing)   PDF"
+Bid / Ask (호가),"191,300 / 191,400 (Investing)   PDF","22,470 / 22,475 (Investing)   PDF","15,430 / 15,435 (Investing)   PDF"
+Beta (베타),1.8 (Investing)   PDF,NA   PDF,NA   PDF
+괴리율 (ETF 한정),NA,-0.12% (네이버)   PDF,0.33% (네이버)   PDF
+외인소진율,36.35% (네이버)   PDF+ 1,NA   PDF+ 1,NA   PDF+ 1
+ROE (자기자본이익률),30.1% (Investing)   PDF,21.14% (Investing)   PDF,-39.09% (Investing)   PDF
+ROA (총자산이익률),11.3% (Investing)   PDF,8.41% (Investing)   PDF,-18.50% (Investing)   PDF
+P/E Ratio (PER),27.66 (Investing)   PDF,NA   PDF,NA   PDF
+추정 PER,22.4배 (네이버)   PDF+ 1,NA   PDF,NA   PDF
+EPS (주당순이익),"7,448.58 (Investing)   PDF",NA   PDF,NA   PDF
+EPS Growth Forecast,NA   PDF,NA   PDF,NA   PDF
+Price/Book (PBR),6.6 (Investing)   PDF,NA   PDF,NA   PDF
+BPS (주당순자산),"29,499.6 (Investing)   PDF",NA   PDF,NA   PDF
+Gross Profit Margin,23.1% (Investing)   PDF,NA   PDF,NA   PDF
+EV/EBITDA,16.45 (Investing)   PDF,NA   PDF,NA   PDF
+NAV (순자산가치),NA,"24,544.37 (Investing) / 22,556 (네이버)   PDF+ 1","18,608.74 (Investing) / 15,628 (네이버)   PDF+ 1"
+Expense Ratio / 총보수,NA,0.43% (Investing)   PDF,0.49% (Investing)   PDF
+Dividend Yield (배당수익률),0.30% (Investing) / 0.31% (네이버)   PDF+ 1,NA   PDF+ 1,NA   PDF+ 1
+Dividends (TTM),600 (Investing)   PDF,NA   PDF,NA   PDF
+
+변수 (종목명),Vertiv Holdings Co (VRT),Hyundai Motor (005380),LIG Nex1 Co Ltd (079550)
+Relative Strength Index (14d),48.26   PDF,49.937   PDF,40.816   PDF
+"MACD (12,26)",-0.9   PDF,-6052.244   PDF,-18238.884   PDF
+ADX (14),33.341   PDF,18.689   PDF,35.671   PDF
+"STOCH (9,6)",43.672   PDF,95.386   PDF,97.271   PDF
+STOCHRSI (14),43.089   PDF,100   PDF,87.392   PDF
+Moving Averages (MA1),325.79   PDF,"720,400.00   PDF","752,400.00   PDF"
+Moving Averages (MA2),337.39   PDF,"671,400.00   PDF","838,600.00   PDF"
+Moving Averages (MA3),304.53   PDF,"563,808.33   PDF","830,333.33   PDF"
+Moving Averages (MA4),251.59   PDF,"495,075.00   PDF","660,483.33   PDF"
+ATR (14),6.8082   PDF,17714.2857   PDF,19214.2857   PDF
+Volume (거래량),"6,075,869 / 6.08M   PDF+ 2","1,525,982 / 1.53M   PDF+ 2","120,526 / 120.27K   PDF+ 1"
+Average Vol. (3m),7.48M   PDF,1.59M   PDF,436.13K   PDF
+Day's Range,306.00 - 326.86   PDF+ 1,"650,000 - 715,000   PDF","705,000 - 741,000   PDF"
+52-Week Range,107.38 - 379.94   PDF,"192,300 - 783,000   PDF","360,000 - 1,118,000   PDF"
+Bid / Ask,NA,"699,000 / 700,000   PDF","726,000 / 728,000   PDF"
+Beta,NA,1.54   PDF,0.91   PDF
+외인소진율,NA,25.64%   PDF,23.88%   PDF
+ROE,45.1%   PDF,7.5%   PDF,22.6%   PDF
+ROA,13.6%   PDF,2.6%   PDF,3.9%   PDF
+P/E Ratio,78.83 (naver) / 81.51 (investing)   PDF+ 1,21.58 (naver) / 21.88 (investing)   PDF+ 1,51.37 (naver) / 54.52 (investing)   PDF+ 1
+추정 PER,NA,17.65   PDF,43.83   PDF
+EPS,4.11 (naver) / 3.98 (investing)   PDF+ 1,"32,437 (naver) / 33,039 (investing)   PDF+ 1","14,133 (naver) / 14,233 (investing)   PDF+ 1"
+EPS Growth Forecast,NA,NA,NA
+PBR,29.30 / 29.99   PDF+ 1,1.53 / 1.34   PDF+ 1,10.51 / 10.39   PDF+ 1
+BPS,11.06 / 11.09   PDF+ 1,"456,242 / 454,143   PDF+ 1","69,083 / 69,123   PDF+ 1"
+Gross Profit Margin,37.2%   PDF,17.7%   PDF,16.3%   PDF
+EV/EBITDA,53.74   PDF,10.33   PDF,33.17   PDF
+NAV,NA,NA,NA
+Dividend Yield,0.08%   PDF,1.43% / 1.37%   PDF+ 1,0.41%   PDF
+Dividends (TTM),0.25   PDF,"10,000   PDF","2,950   PDF"
+
+변수 (종목명)|SOL 미국배당다우존스(H) (452360)|KODEX 미국S&P500(H) (449180)|SK하이닉스 (000660)
+Relative Strength Index (14d) / RSI|64.085 (Investing Hourly)|46.427 (Investing Hourly)|31.878 (Investing Hourly)
+MACD (12,26)|8.435 (Investing Hourly)|-3.528 (Investing Hourly)|-52378.896 (Investing Hourly)
+ADX (14)|65.354 (Investing Hourly)|28.036 (Investing Hourly)|43.582 (Investing Hourly)
+STOCH (9,6)|99.289 (Investing Hourly)|99.533 (Investing Hourly)|91.407 (Investing Hourly)
+STOCHRSI (14)|92.447 (Investing Hourly)|76.911 (Investing Hourly)|8.999 (Investing Hourly)
+Moving Averages (MA1)|12,722.00 (네이버)|16,972.00 (네이버)|2,284,800.00 (네이버)
+Moving Averages (MA2)|12,622.50 (네이버)|16,739.25 (네이버)|2,001,950.00 (네이버)
+Moving Averages (MA3)|12,328.02 (네이버)|15,800.42 (네이버)|1,375,883.33 (네이버)
+Moving Averages (MA4)|11,940.49 (네이버)|15,680.46 (네이버)|1,070,775.00 (네이버)
+ATR (14)|30.7143 (Investing Hourly)|41.4286 (Investing Hourly)|54357.1429 (Investing Hourly)
+Volume (거래량)|91,109 (네이버) / 91,031 (Investing)|754,943 (네이버) / 754,921 (Investing)|5,358,995 (네이버)
+Average Vol. (3m)|119,524 (Investing)|599,152 (Investing)|NA
+Day's Range (일일 변동폭)|12,725 - 12,810 (네이버/Investing)|16,895 - 16,955 (네이버/Investing)|2,070,000 - 2,188,000 (네이버)
+52-Week Range|10,470 - 12,995 (네이버/Investing)|13,521 - 17,060 (네이버) / 13,615 - 17,060 (Investing)|227,500 - 2,407,000 (네이버)
+Bid / Ask (호가)|12,790.00 / 12,795.00 (Investing)|16,915.00 / 16,920.00 (Investing)|NA
+Beta (베타)|-0.31 (Investing)|1.11 (Investing)|NA
+괴리율 (ETF 한정)|0.11% (네이버)|-0.28% (네이버)|NA
+외인소진율|NA|NA|51.27% (네이버)
+ROE (자기자본이익률)|30.22% (Investing)|34.63% (Investing)|NA
+ROA (총자산이익률)|9.30% (Investing)|17.18% (Investing)|NA
+P/E Ratio (PER)|NA|NA|20.0배 (네이버)
+추정 PER|NA|NA|6.92배 (네이버)
+EPS (주당순이익)|NA|NA|103,521원 (네이버)
+EPS Growth Forecast|NA|NA|NA
+Price/Book (PBR)|NA|NA|8.71배 (네이버)
+BPS (주당순자산)|NA|NA|237,789원 (네이버)
+Gross Profit Margin|NA|NA|NA
+EV/EBITDA|NA|NA|NA
+NAV (순자산가치)|12,826.76 (Investing)|16,961.80 (Investing)|NA
+Expense Ratio / 총보수|0.05% (네이버) / 0.14% (Investing)|0.0099% (네이버) / 0.12% (Investing)|NA
+Dividend Yield (배당수익률)|2.91% (네이버) / 2.9134% (Investing)|0.91% (네이버) / 0.9059% (Investing)|0.14% (네이버)
+Dividends (TTM)|370.00 (Investing)|153.00 (Investing)|3,000원 (네이버)
+
+변수 (종목명),Schwab U.S. Dividend Equity ETF (SCHD),Samsung Electronics (005930),NCsoft Corp (036570)
+Relative Strength Index (14d) / RSI,57.102 (Investing Hourly),41.08 (Investing Hourly),43.551 (Investing Hourly)
+"MACD (12,26)",0.04 (Investing Hourly),72.701 (Investing Hourly),-3429.454 (Investing Hourly)
+ADX (14),20.051 (Investing Hourly),40.233 (Investing Hourly),30.839 (Investing Hourly)
+"STOCH (9,6)",57.716 (Investing Hourly),92.27 (Investing Hourly),94.513 (Investing Hourly)
+STOCHRSI (14),46.505 (Investing Hourly),11.117 (Investing Hourly),60.742 (Investing Hourly)
+Moving Averages (MA1),32.40 (Naver),"341,400.00 (Naver)","298,800.00 (Naver)"
+Moving Averages (MA2),32.16 (Naver),"299,600.00 (Naver)","273,675.00 (Naver)"
+Moving Averages (MA3),31.33 (Naver),"235,056.67 (Naver)","250,275.00 (Naver)"
+Moving Averages (MA4),30.47 (Naver),"192,055.00 (Naver)","233,585.83 (Naver)"
+ATR (14),0.1133 (Investing Hourly),8267.8571 (Investing Hourly),8785.7143 (Investing Hourly)
+Volume (거래량),"18,235,093 (Investing / Naver)","31,299,200 (Naver) / 31.29M (Investing)","139,003 (Naver) / 139K (Investing)"
+Average Vol. (3m),"22,289,153 (Investing)",28.35M (Investing),150.22K (Investing)
+Day's Range (일일 변동폭),32.49 - 32.79 (Investing / Naver),"325,000 - 343,000 (Investing / Naver)","271,500 - 284,500 (Investing / Naver)"
+52-Week Range,26.16 - 32.91 (Investing / Naver),"56,900 - 370,000 (Investing / Naver)","168,500 - 343,500 (Investing / Naver)"
+Bid / Ask (호가),NA,"329,000 / 329,500 (Investing)","281,500 / 282,000 (Investing)"
+Beta (베타),0.17 (Investing),NA,0.9 (Investing)
+괴리율 (ETF 한정),NA,NA,NA
+외인소진율,NA,47.81% (Naver),35.72% (Naver)
+ROE (자기자본이익률),30.97% (Investing),18.9% (Investing),14% (Investing)
+ROA (총자산이익률),9.54% (Investing),14.6% (Investing),10.9% (Investing)
+P/E Ratio (PER),NA,26.59배 (Naver),13.25배 (Naver)
+추정 PER,NA,7.62배 (Naver),13.11배 (Naver)
+EPS (주당순이익),NA,"12,372원 (Naver) / 12,461.62 (Investing)","21,244원 (Naver) / 23,601.06 (Investing)"
+EPS Growth Forecast,NA,NA,NA
+Price/Book (PBR),NA,4.58배 (Naver),1.55배 (Naver)
+BPS (주당순자산),NA,"71,907원 (Naver)","181,808원 (Naver)"
+Gross Profit Margin,NA,47.7% (Investing),99.3% (Investing)
+EV/EBITDA,NA,15.19 (Investing),18.94 (Investing)
+NAV (순자산가치),32.59 (Naver) / 32.06 (Investing),NA,NA
+Expense Ratio / 총보수,0.06% (Investing),NA,NA
+Dividend Yield (배당수익률),3.2614% (Investing),0.51% (Naver) / 0.41% (Investing),0.41% (Naver) / 0.34% (Investing)
+Dividends (TTM),0.26 (Naver) / 1.0557 (Investing),"1,668원 (Naver) / 1,468 (Investing)","1,150원 (Naver) / 1,150 (Investing)"
+
+변수 (종목명),VanEck Semiconductor ETF (SMH),Micron Technology Inc (MU),Realty Income Corp (O)
+Relative Strength Index (14d) / RSI,54.514 (Investing Hourly)   PDF,44.583 (Investing Hourly)   PDF,41.715 (Investing Hourly)   PDF
+"MACD (12,26)",4.31 (Investing Hourly)   PDF,4.36 (Investing Hourly)   PDF,-0.34 (Investing Hourly)   PDF
+ADX (14),35.151 (Investing Hourly)   PDF,33.63 (Investing Hourly)   PDF,31.046 (Investing Hourly)   PDF
+"STOCH (9,6)",60.076 (Investing Hourly)   PDF,33.453 (Investing Hourly)   PDF,22.656 (Investing Hourly)   PDF
+STOCHRSI (14),43.246 (Investing Hourly)   PDF,10.829 (Investing Hourly)   PDF,38.712 (Investing Hourly)   PDF
+Moving Averages (MA1),620.88 (네이버)   PDF,"1,029.23 (네이버)   PDF",60.04 (네이버)   PDF
+Moving Averages (MA2),582.61 (네이버)   PDF,838.95 (네이버)   PDF,61.50 (네이버)   PDF
+Moving Averages (MA3),485.05 (네이버)   PDF,577.81 (네이버)   PDF,62.53 (네이버)   PDF
+Moving Averages (MA4),437.59 (네이버)   PDF,468.61 (네이버)   PDF,61.94 (네이버)   PDF
+ATR (14),8.9196 (Investing Hourly)   PDF,28.3632 (Investing Hourly)   PDF,0.3596 (Investing Hourly)   PDF
+Volume (거래량),"10,462,936 (Investing/네이버)   PDF+ 1","54,917,159 (네이버) / 54.92M (Investing)   PDF+ 1","5,964,103 (Investing/네이버)   PDF+ 2"
+Average Vol. (3m),"9,645,582 (Investing)   PDF",48.35M (Investing)   PDF,5.8M (Investing)   PDF+ 1
+Day's Range (일일 변동폭),604.61 - 634.78 (Investing/네이버)   PDF+ 2,"971.68 - 1,036.37 (Investing/네이버)   PDF+ 1",59.51 - 60.63 (Investing/네이버)   PDF+ 2
+52-Week Range,249.76 - 642.77 (네이버) / 252.64 - 642.77 (Investing)   PDF+ 1,"103.38 - 1,089.29 (Investing/네이버)   PDF",55.57 - 67.94 (네이버) / 55.61 - 67.94 (Investing)   PDF+ 2
+Bid / Ask (호가),NA   PDF,NA   PDF,NA   PDF+ 1
+Beta (베타),2.27 (Investing)   PDF+ 1,NA   PDF,0.76 (Investing)   PDF
+괴리율 (ETF 한정),NA,NA,NA
+외인소진율,NA,NA,NA
+ROE (자기자본이익률),35.92% (Investing)   PDF+ 1,39.8% (Investing)   PDF,2.9% (Investing)   PDF
+ROA (총자산이익률),24.74% (Investing)   PDF,27.6% (Investing)   PDF,1.6% (Investing)   PDF
+P/E Ratio (PER),NA (네이버)   PDF+ 1,47.07 (Investing)   PDF,48.86 (Investing)   PDF
+추정 PER,NA,NA,NA
+EPS (주당순이익),NA,21.2573 (Investing)   PDF,1.2203 (Investing)   PDF
+EPS Growth Forecast,NA,NA (Unlock)   PDF,NA (Unlock)   PDF
+Price/Book (PBR),NA,16.8 (Investing)   PDF,1.44 (Investing)   PDF
+BPS (주당순자산),NA,64.38 (Investing)   PDF,41.98 (Investing/네이버)   PDF+ 1
+Gross Profit Margin,NA,58.4% (Investing)   PDF,92.6% (Investing)   PDF
+EV/EBITDA,NA,32.92 (Investing)   PDF,16.47 (Investing)   PDF
+NAV (순자산가치),627.68 (네이버) / 598.65 (Investing)   PDF+ 2,NA,NA
+Expense Ratio / 총보수,0.35% (Investing)   PDF,NA,NA
+Dividend Yield (배당수익률),0.1732% (Investing)   PDF+ 1,0.06% (Investing)   PDF,5.43% (Investing)   PDF
+Dividends (TTM),1.10 (Investing/네이버)   PDF+ 1,0.60 (Investing)   PDF,3.246 (Investing)   PDF
+
+변수 (종목명),Palantir Technologies (PLTR),MiraeAsset TIGER US Tech TOP10 Indxx ETF(H) (472160),SAMSUNG KODEX AI Electric Power Core Facilities ETF (487240)
+Relative Strength Index (14d) / RSI,38.473 (Hourly)   PDF,35.049 (Hourly)   PDF,33.382 (Hourly)   PDF
+"MACD (12,26)",-1.6 (Hourly)   PDF,-98.957 (Hourly)   PDF,-1361.949 (Hourly)   PDF
+ADX (14),57.293 (Hourly)   PDF,30.371 (Hourly)   PDF,51.381 (Hourly)   PDF
+"STOCH (9,6)",20.605 (Hourly)   PDF,98.138 (Hourly)   PDF,91.178 (Hourly)   PDF
+STOCHRSI (14),52.553 (Hourly)   PDF,82.399 (Hourly)   PDF,56.889 (Hourly)   PDF
+Moving Averages (MA1),150.6590 (Naver)   PDF,"19,512.00 (Naver)   PDF","46,541.00 (Naver)   PDF"
+Moving Averages (MA2),139.65 (Naver)   PDF,"19,445.25 (Naver)   PDF","53,289.75 (Naver)   PDF"
+Moving Averages (MA3),149.38 (Naver)   PDF,"17,888.08 (Naver)   PDF","42,499.50 (Naver)   PDF"
+Moving Averages (MA4),152.28 (Naver)   PDF,"17,776.53 (Naver)   PDF","34,759.21 (Naver)   PDF"
+ATR (14),2.3958 (Hourly)   PDF,93.2143 (Hourly)   PDF,903.9286 (Hourly)   PDF
+Volume (거래량),40.83M (Investing)   PDF+ 1,"737,035 (Investing) / 737,158 (Naver)   PDF+ 2","4,440,979 (Investing) / 4,445,728 (Naver)   PDF+ 2"
+Average Vol. (3m),45.76M (Investing)   PDF,"664,741 (Investing)   PDF+ 1","6,802,070 (Investing)   PDF+ 1"
+Day's Range (일일 변동폭),140.27 - 146.37 (Investing)   PDF,"19,070 - 19,275 (Investing)   PDF+ 1","42,160 - 44,950 (Investing)   PDF+ 1"
+52-Week Range,121.92 - 207.52 (Investing)   PDF,"14,480 - 19,985 (Investing)   PDF+ 1","12,840 - 64,630 (Investing)   PDF+ 1"
+Bid / Ask (호가),NA,"19,140.00 / 19,150.00 (Investing)   PDF+ 1","43,350.00 / 43,355.00 (Investing)   PDF+ 1"
+Beta (베타),NA,0.85 (Investing)   PDF,0.92 (Investing)   PDF
+괴리율 (ETF 한정),NA,-0.56% (Naver)   PDF,-0.25% (Naver)   PDF
+외인소진율,NA,NA,NA
+ROE (자기자본이익률),32.9% (Investing)   PDF,47.89% (Investing)   PDF,19.30% (Investing)   PDF
+ROA (총자산이익률),27.1% (Investing)   PDF,32.38% (Investing)   PDF+ 1,7.52% (Investing)   PDF+ 1
+P/E Ratio (PER),159.96 (Investing)   PDF,NA,NA
+추정 PER,NA,NA,NA
+EPS (주당순이익),0.8896 (Investing)   PDF,NA,NA
+EPS Growth Forecast,NA,NA,NA
+Price/Book (PBR),40.34 (Investing)   PDF,NA,NA
+BPS (주당순자산),3.53 (Investing)   PDF,NA,NA
+Gross Profit Margin,84.1% (Investing)   PDF,NA,NA
+EV/EBITDA,165.09 (Investing)   PDF,NA,NA
+NAV (순자산가치),NA,"19,681.98 (Investing)   PDF+ 1","47,526.63 (Investing)   PDF+ 1"
+Expense Ratio / 총보수,NA,0.49% (Naver) / 0.56% (Investing)   PDF+ 1,0.39% (Naver) / 0.46% (Investing)   PDF+ 1
+Dividend Yield (배당수익률),N/A   PDF,0.2345% (Investing)   PDF,0.0854% (Investing)   PDF
+Dividends (TTM),N/A   PDF,45.00 (Investing)   PDF,39.00 (Investing)   PDF
+
+변수 (종목명),Eli Lilly and Company (LLY),Samsung KODEX S&P500 ETF (379800)
+Relative Strength Index (14d) / RSI,63.622 (Investing Hourly),64.963 (Investing Hourly)
+"MACD (12,26)",11 (Investing Hourly),138.043 (Investing Hourly)
+ADX (14),31.223 (Investing Hourly),35.081 (Investing Hourly)
+"STOCH (9,6)",84.168 (Investing Hourly),99.493 (Investing Hourly)
+STOCHRSI (14),70.154 (Investing Hourly),10.801 (Investing Hourly)
+Moving Averages (MA1),"1,091.08 (Naver)","26,000.00 (Naver)"
+Moving Averages (MA2),"1,038.63 (Naver)","25,315.75 (Naver)"
+Moving Averages (MA3),964.56 (Naver),"23,761.50 (Naver)"
+Moving Averages (MA4),"1,005.33 (Naver)","23,263.16 (Naver)"
+ATR (14),12.5658 (Investing Hourly),85.7143 (Investing Hourly)
+Volume (거래량),4.05M (Investing),"13,316,130 (Investing) / 13,316,916 (Naver)"
+Average Vol. (3m),3.1M (Investing),"16,086,357 (Investing)"
+Day's Range (일일 변동폭),"1,101.62 - 1,140.46 (Investing)","25,905 - 26,440 (Investing/Naver)"
+52-Week Range,"623.78 - 1,149.10 (Investing)","18,500 - 26,440 (Investing) / 18,226 - 26,440 (Naver)"
+Bid / Ask (호가),NA,"26,275.00 / 26,280.00 (Investing)"
+Beta (베타),0.48 (Investing),1.16 (Investing)
+괴리율 (ETF 한정),NA,-0.27% (Naver)
+외인소진율,NA,NA
+ROE (자기자본이익률),107.6% (Investing),34.62% (Investing)
+ROA (총자산이익률),24.5% (Investing),17.17% (Investing)
+P/E Ratio (PER),39.92 (Investing),NA
+추정 PER,NA,36.37배 (Naver)
+EPS (주당순이익),28.1511 (Investing),30.94 (Naver)
+EPS Growth Forecast,NA,NA
+Price/Book (PBR),30.84 (Investing),34.03배 (Naver)
+BPS (주당순자산),34.87 (Investing),33.07 (Naver)
+Gross Profit Margin,82.8% (Investing),NA
+EV/EBITDA,27.6 (Investing),NA
+NAV (순자산가치),NA,"25,791.52 (Investing) / 26,416 (Naver)"
+Expense Ratio / 총보수,NA,0.07% (Investing) / 0.0062% (Naver)
+Dividend Yield (배당수익률),0.61% (Investing),1.7303% (Investing) / 1.73% (Naver)
+Dividends (TTM),6.92 (Investing),451.00 (Investing)
+
+
+3) Fear & Greed Index
+55
+
+4) USD/KRW - US Dollar Korean Won
+1,538.56
++6.68
+(+0.44%)

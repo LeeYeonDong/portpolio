@@ -1,0 +1,12 @@
+﻿id,Name,naver_stock,investing 1,investing 2
+1,DRAM,https://stock.naver.com/worldstock/etf/DRAM.K/price,https://www.investing.com/etfs/dram,https://www.investing.com/etfs/dram-technical
+2,HANARO 미국AI메모리반도체TOP4+,https://stock.naver.com/domestic/stock/0181B0/price,https://www.investing.com/etfs/0181b0-seoul,https://www.investing.com/etfs/0181b0-seoul-technical
+9,PAVE,https://stock.naver.com/worldstock/etf/PAVE.K/price,https://www.investing.com/etfs/global-x-us-infrastructure-dev,https://www.investing.com/etfs/global-x-us-infrastructure-dev-technical
+12,HANARO Fn K-반도체,https://stock.naver.com/domestic/stock/395270/price,https://www.investing.com/etfs/395270,https://www.investing.com/etfs/395270-technical
+15,인텔,https://stock.naver.com/worldstock/stock/INTC.O/price,https://www.investing.com/equities/intel-corp,https://www.investing.com/equities/intel-corp-technical
+24,SK하이닉스,https://stock.naver.com/domestic/stock/000660/price,https://www.investing.com/equities/sk-hynix-inc,https://www.investing.com/equities/sk-hynix-inc-technical
+27,삼성전자,https://stock.naver.com/domestic/stock/005930/price,https://www.investing.com/equities/samsung-electronics-co-ltd,https://www.investing.com/equities/samsung-electronics-co-ltd-technical
+28,VanEck Semiconductor ETF,https://stock.naver.com/worldstock/etf/SMH.O/price,https://www.investing.com/etfs/holdrs-merrill-lynch-semiconductor,https://www.investing.com/etfs/holdrs-merrill-lynch-semiconductor-technical
+30,마이크론 테크놀로지,https://stock.naver.com/worldstock/stock/MU.O/price,https://www.investing.com/equities/micron-tech,https://www.investing.com/equities/micron-tech-technical
+31,TIGER 미국테크TOP10 INDXX(H),https://stock.naver.com/domestic/stock/472160/price,https://www.investing.com/etfs/472160,https://www.investing.com/etfs/472160-technical
+33,팔란티어 테크놀로지스,https://stock.naver.com/worldstock/stock/PLTR.O/price,https://www.investing.com/equities/palantir-technologies-inc,https://www.investing.com/equities/palantir-technologies-inc-technical

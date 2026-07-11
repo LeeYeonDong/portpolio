@@ -1,0 +1,51 @@
+﻿id,Name,naver_stock,investing 1,investing 2
+1,ACE 일라이릴리밸류체인,https://stock.naver.com/domestic/stock/497520/price,https://www.investing.com/etfs/497520,https://www.investing.com/etfs/497520-technical
+2,ASML 홀딩 ADR,https://stock.naver.com/worldstock/stock/ASML.O/price,https://www.investing.com/equities/asml-holdings,https://www.investing.com/equities/asml-holdings-technical
+3,GE 버노바,https://stock.naver.com/worldstock/stock/GEV/price,https://www.investing.com/equities/ge-vernova-llc,https://www.investing.com/equities/ge-vernova-llc-technical
+4,HANARO 미국AI메모리반도체TOP4+,https://stock.naver.com/domestic/stock/0181B0/price,https://www.investing.com/etfs/0181b0-seoul,https://www.investing.com/etfs/0181b0-seoul-technical
+5,KoAct 글로벌AI메모리반도체액티브,https://stock.naver.com/domestic/stock/0174B0/price,https://www.investing.com/etfs/0174b0-seoul,https://www.investing.com/etfs/0174b0-seoul-technical
+6,KODEX AI반도체핵심장비,https://stock.naver.com/domestic/stock/471990/price,https://www.investing.com/etfs/471990-seoul,https://www.investing.com/etfs/471990-seoul-technical
+7,KODEX AI전력핵심설비,https://stock.naver.com/domestic/stock/487240/price,https://www.investing.com/etfs/487240-seoul,https://www.investing.com/etfs/487240-seoul-technical
+8,KODEX 미국S&P500,https://stock.naver.com/domestic/stock/379800/price,https://www.investing.com/etfs/379800,https://www.investing.com/etfs/379800-technical
+9,KODEX 미국S&P500(H),https://stock.naver.com/domestic/stock/449180/price,https://www.investing.com/etfs/449180,https://www.investing.com/etfs/449180-technical
+10,KODEX 미국나스닥100,https://stock.naver.com/domestic/stock/379810/price,https://www.investing.com/etfs/379810,https://www.investing.com/etfs/379810-technical
+11,KODEX 미국나스닥100(H),https://stock.naver.com/domestic/stock/449190/price,https://www.investing.com/etfs/449190,https://www.investing.com/etfs/449190-technical
+12,PAVE,https://stock.naver.com/worldstock/etf/PAVE.K/price,https://www.investing.com/etfs/global-x-us-infrastructure-dev,https://www.investing.com/etfs/global-x-us-infrastructure-dev-technical
+13,Schwab US Dividend Equity ETF,https://stock.naver.com/worldstock/etf/SCHD.K/price,https://www.investing.com/etfs/schwab-us-dividend-equity,https://www.investing.com/etfs/schwab-us-dividend-equity-technical
+14,SK하이닉스,https://stock.naver.com/domestic/stock/000660/price,https://www.investing.com/equities/sk-hynix-inc,https://www.investing.com/equities/sk-hynix-inc-technical
+15,SOL AI반도체소부장,https://stock.naver.com/domestic/stock/455850/price,https://www.investing.com/etfs/455850,https://www.investing.com/etfs/455850-technical
+16,SOL K방산,https://stock.naver.com/domestic/stock/490480/price,https://www.investing.com/etfs/490480,https://www.investing.com/etfs/490480-technical
+17,SOL 미국배당다우존스,https://stock.naver.com/domestic/stock/446720/price,https://www.investing.com/etfs/446720,https://www.investing.com/etfs/446720-technical
+18,SOL 미국배당다우존스(H),https://stock.naver.com/domestic/stock/452360/price,https://www.investing.com/etfs/452360,https://www.investing.com/etfs/452360-technical
+19,TIGER 글로벌AI전력인프라액티브,https://stock.naver.com/domestic/stock/491010/price,https://www.investing.com/etfs/491010,https://www.investing.com/etfs/491010-technical
+20,TIGER 미국테크TOP10 INDXX,https://stock.naver.com/domestic/stock/381170/price,https://www.investing.com/etfs/381170,https://www.investing.com/etfs/381170-technical
+21,TIGER 미국테크TOP10 INDXX(H),https://stock.naver.com/domestic/stock/472160/price,https://www.investing.com/etfs/472160,https://www.investing.com/etfs/472160-technical
+22,TIGER 바이오TOP10,https://stock.naver.com/domestic/stock/364970/price,https://www.investing.com/etfs/364970,https://www.investing.com/etfs/364970-technical
+23,VanEck Semiconductor ETF,https://stock.naver.com/worldstock/etf/SMH.O/price,https://www.investing.com/etfs/holdrs-merrill-lynch-semiconductor,https://www.investing.com/etfs/holdrs-merrill-lynch-semiconductor-technical
+24,YPF ADR,https://stock.naver.com/worldstock/stock/YPF/price,https://www.investing.com/equities/ypf-sa,https://www.investing.com/equities/ypf-sa-technical
+25,나테라,https://stock.naver.com/worldstock/stock/NTRA.O/price,https://www.investing.com/equities/natera-inc,https://www.investing.com/equities/natera-inc-technical
+26,노보 노디스크 ADR,https://stock.naver.com/worldstock/stock/NVO/price,https://www.investing.com/equities/novo-nordis,https://www.investing.com/equities/novo-nordis-technical
+27,델타 에어라인스,https://stock.naver.com/worldstock/stock/DAL/price,https://www.investing.com/equities/delta-air-lines-new,https://www.investing.com/equities/delta-air-lines-new-technical
+28,리얼티 인컴,https://stock.naver.com/worldstock/stock/O/price,https://www.investing.com/equities/realty-income,https://www.investing.com/equities/realty-income-technical
+29,마이크로소프트,https://stock.naver.com/worldstock/stock/MSFT.O/price,https://www.investing.com/equities/microsoft-corp,https://www.investing.com/equities/microsoft-corp-technical
+30,마이크론 테크놀로지,https://stock.naver.com/worldstock/stock/MU.O/price,https://www.investing.com/equities/micron-tech,https://www.investing.com/equities/micron-tech-technical
+31,마이티 바이오시밀러&CDMO액티브,https://stock.naver.com/domestic/stock/0001P0/price,https://www.investing.com/etfs/0001p0,https://www.investing.com/etfs/0001p0-technical
+32,모더나,https://stock.naver.com/worldstock/stock/MRNA.O/price,https://www.investing.com/equities/moderna,https://www.investing.com/equities/moderna-technical
+33,바이킹 테라퓨틱스 (VKTX),https://stock.naver.com/worldstock/stock/VKTX.O/price,https://www.investing.com/equities/viking-therapeutics-inc,https://www.investing.com/equities/viking-therapeutics-inc-technical
+34,버티브 홀딩스,https://stock.naver.com/worldstock/stock/VRT/price,https://www.investing.com/equities/gs-acquisition-a,https://www.investing.com/equities/gs-acquisition-a-technical
+35,브로드컴 (AVGO),https://stock.naver.com/worldstock/stock/AVGO.O/price,https://www.investing.com/equities/avago-technologies,https://www.investing.com/equities/avago-technologies-technical
+36,삼성바이오로직스,https://stock.naver.com/domestic/stock/207940/price,https://www.investing.com/equities/samsung-biologics-co-ltd,https://www.investing.com/equities/samsung-biologics-co-ltd-technical
+37,삼성전자,https://stock.naver.com/domestic/stock/005930/price,https://www.investing.com/equities/samsung-electronics-co-ltd,https://www.investing.com/equities/samsung-electronics-co-ltd-technical
+38,샌디스크,https://stock.naver.com/worldstock/stock/SNDK.O/price,https://www.investing.com/equities/sandisk-corp,https://www.investing.com/equities/sandisk-corp-technical
+39,써모 피셔 사이언티픽,https://stock.naver.com/worldstock/stock/TMO/price,https://www.investing.com/equities/thermo-fisher-sc,https://www.investing.com/equities/thermo-fisher-sc-technical
+40,알파벳 Class C,https://stock.naver.com/worldstock/stock/GOOG.O/price,https://www.investing.com/equities/google-inc-c,https://www.investing.com/equities/google-inc-c-technical
+41,엔씨소프트,https://stock.naver.com/domestic/stock/036570/price,https://www.investing.com/equities/ncsoft-corp,https://www.investing.com/equities/ncsoft-corp-technical
+42,이수페타시스,https://stock.naver.com/domestic/stock/007660/price,https://www.investing.com/equities/isupetasys,https://www.investing.com/equities/isupetasys-technical
+43,이튼(ENT),https://stock.naver.com/worldstock/stock/ETN/price,https://www.investing.com/equities/eaton,https://www.investing.com/equities/eaton-technical
+44,일라이 릴리,https://stock.naver.com/worldstock/stock/LLY/price,https://www.investing.com/equities/eli-lilly-and-co,https://www.investing.com/equities/eli-lilly-and-co-technical
+45,팔란티어 테크놀로지스,https://stock.naver.com/worldstock/stock/PLTR.O/price,https://www.investing.com/equities/palantir-technologies-inc,https://www.investing.com/equities/palantir-technologies-inc-technical
+46,한미반도체,https://stock.naver.com/domestic/stock/042700/price,https://www.investing.com/equities/hanmi-semicon,https://www.investing.com/equities/hanmi-semicon-technical
+47,한화에어로스페이스 (012450),https://stock.naver.com/domestic/stock/012450/price,https://www.investing.com/equities/samsung-techwin,https://www.investing.com/equities/samsung-techwin-technical
+48,현대로템,https://stock.naver.com/domestic/stock/064350/price,https://www.investing.com/equities/hyundai-rotem,https://www.investing.com/equities/hyundai-rotem-technical
+49,현대차,https://stock.naver.com/domestic/stock/005380/price,https://www.investing.com/equities/hyundai-motor,https://www.investing.com/equities/hyundai-motor-technical
+50,화이자,https://stock.naver.com/worldstock/stock/PFE/price,https://www.investing.com/equities/pfizer,https://www.investing.com/equities/pfizer-technical
