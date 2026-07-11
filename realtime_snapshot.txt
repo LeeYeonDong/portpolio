@@ -4,7 +4,158 @@
 👉 JULES.md의 지침에 따라 'portpolio_image/' 폴더 내 이미지를 직접 판독하여 사용하라.
 
 ### 2) 지표 현황 (크롤링 결과)
-[]
+[
+  {
+    "Indicator": "RSI..14d.",
+    "ACE KRX금현물": "50.84",
+    "ACE 미국빅테크TOP7 Plus": "47.838",
+    "ACE 일라이릴리밸류체인": "47.59"
+  },
+  {
+    "Indicator": "MACD..12.26.",
+    "ACE KRX금현물": "-28.929",
+    "ACE 미국빅테크TOP7 Plus": "33.059",
+    "ACE 일라이릴리밸류체인": "-28.215"
+  },
+  {
+    "Indicator": "ADX..14.",
+    "ACE KRX금현물": "45.014",
+    "ACE 미국빅테크TOP7 Plus": "31.437",
+    "ACE 일라이릴리밸류체인": "50.766"
+  },
+  {
+    "Indicator": "STOCH...STOCHRSI",
+    "ACE KRX금현물": "99.612",
+    "ACE 미국빅테크TOP7 Plus": "99.417",
+    "ACE 일라이릴리밸류체인": "98.503"
+  },
+  {
+    "Indicator": "ATR..14.",
+    "ACE KRX금현물": "133.9286",
+    "ACE 미국빅테크TOP7 Plus": "118.7857",
+    "ACE 일라이릴리밸류체인": "96.7857"
+  },
+  {
+    "Indicator": "ROE..자기자본이익률."
+  },
+  {
+    "Indicator": "ROA..총자산이익률."
+  },
+  {
+    "Indicator": "EV.EBITDA"
+  },
+  {
+    "Indicator": "Beta..베타.",
+    "ACE KRX금현물": "0.47",
+    "ACE 미국빅테크TOP7 Plus": "0.84",
+    "ACE 일라이릴리밸류체인": "1.24"
+  },
+  {
+    "Indicator": "Average.Vol...3m.",
+    "ACE KRX금현물": "1,609,948",
+    "ACE 미국빅테크TOP7 Plus": "945,215",
+    "ACE 일라이릴리밸류체인": "6,234"
+  },
+  {
+    "Indicator": "외인소진율"
+  },
+  {
+    "Indicator": "추정.PER"
+  },
+  {
+    "Indicator": "MA1",
+    "ACE KRX금현물": "27,781.00",
+    "ACE 미국빅테크TOP7 Plus": "24,836.00",
+    "ACE 일라이릴리밸류체인": "13,794.00"
+  },
+  {
+    "Indicator": "MA2",
+    "ACE KRX금현물": "28,006.75",
+    "ACE 미국빅테크TOP7 Plus": "24,822.50",
+    "ACE 일라이릴리밸류체인": "13,338.25"
+  },
+  {
+    "Indicator": "MA3",
+    "ACE KRX금현물": "29,602.33",
+    "ACE 미국빅테크TOP7 Plus": "25,040.08",
+    "ACE 일라이릴리밸류체인": "12,629.25"
+  },
+  {
+    "Indicator": "MA4",
+    "ACE KRX금현물": "31,114.63",
+    "ACE 미국빅테크TOP7 Plus": "23,475.67",
+    "ACE 일라이릴리밸류체인": "12,602.08"
+  },
+  {
+    "Indicator": "PER"
+  },
+  {
+    "Indicator": "EPS"
+  },
+  {
+    "Indicator": "PBR"
+  },
+  {
+    "Indicator": "Volume",
+    "ACE KRX금현물": "587,100",
+    "ACE 미국빅테크TOP7 Plus": "517,622",
+    "ACE 일라이릴리밸류체인": "2,973"
+  },
+  {
+    "Indicator": "Day.s.Range",
+    "ACE KRX금현물": "27,510                                                                                        27,830",
+    "ACE 미국빅테크TOP7 Plus": "24,870                                                                                           25,150",
+    "ACE 일라이릴리밸류체인": "13,490                                                                                           13,840"
+  },
+  {
+    "Indicator": "X52.Week.Range",
+    "ACE KRX금현물": "20,550                                                                                        37,890",
+    "ACE 미국빅테크TOP7 Plus": "18,225                                                                                            27,115",
+    "ACE 일라이릴리밸류체인": "9,635                                                                                             14,195"
+  },
+  {
+    "Indicator": "Bid...Ask",
+    "ACE KRX금현물": "27,685.00 / 27,695.00",
+    "ACE 미국빅테크TOP7 Plus": "24,890.00 / 24,910.00",
+    "ACE 일라이릴리밸류체인": "13,710.00 / 13,730.00"
+  },
+  {
+    "Indicator": "괴리율",
+    "ACE KRX금현물": "-0.79%",
+    "ACE 미국빅테크TOP7 Plus": "0.48%",
+    "ACE 일라이릴리밸류체인": "-0.85%"
+  },
+  {
+    "Indicator": "EPS.Growth"
+  },
+  {
+    "Indicator": "BPS"
+  },
+  {
+    "Indicator": "Gross.Profit.Margin"
+  },
+  {
+    "Indicator": "NAV",
+    "ACE KRX금현물": "27,682",
+    "ACE 미국빅테크TOP7 Plus": "25,039",
+    "ACE 일라이릴리밸류체인": "13,769"
+  },
+  {
+    "Indicator": "Expense.Ratio",
+    "ACE KRX금현물": "Investing: 0.31% / Naver: 0.19%",
+    "ACE 미국빅테크TOP7 Plus": "Investing: 0.37% / Naver: 0.3%",
+    "ACE 일라이릴리밸류체인": "Investing: 0.80% / Naver: 0.45%"
+  },
+  {
+    "Indicator": "Dividend.Yield"
+  },
+  {
+    "Indicator": "Dividends..TTM.",
+    "ACE KRX금현물": "1.00",
+    "ACE 미국빅테크TOP7 Plus": "54.00",
+    "ACE 일라이릴리밸류체인": "88.00"
+  }
+]
 
 ### 3) 계좌 제약 및 매크로 변수
 - 투자 가능 현금: 토스증권 3,000,000원 + $0($0 원화 환전 가능)
